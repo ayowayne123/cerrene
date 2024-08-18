@@ -12,9 +12,9 @@ module.exports = {
       padding: {
         DEFAULT: "2rem",
         sm: "1rem",
-        md: "2rem",
-        lg: "2rem",
-        xl: "5rem",
+        md: "1rem",
+        lg: "1rem",
+        xl: "1rem",
 
        
       },
@@ -24,6 +24,10 @@ satoshi: ["var(--font-satoshi)"]
     },
     
     extend: {
+      screens: {
+        lg: "1280px",  // Custom size for large screens
+        xl: "1440px",  // Custom size for extra-large screens
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -35,6 +39,7 @@ satoshi: ["var(--font-satoshi)"]
        cerreneOrange : "#F07127",
        cerreneLightOrange : "#A24819",
        cerreneBeige: "#FFDBC5",
+       cerreneYellow: "#F8FABF",
       }
     },
   },
