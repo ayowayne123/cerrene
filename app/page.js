@@ -3,6 +3,7 @@ import Hero from "./hero";
 import Photos from "./photogrid";
 import Discount from "./discount";
 import Who from "./whoweare";
+import Services from "./services";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
    <Photos/>
    <Discount/>
    <Who/>
+   <Services/>
     </main>
   );
 }

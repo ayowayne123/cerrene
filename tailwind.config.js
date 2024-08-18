@@ -28,6 +28,13 @@ satoshi: ["var(--font-satoshi)"]
         lg: "1280px",  // Custom size for large screens
         xl: "1440px",  // Custom size for extra-large screens
       },
+      gridTemplateColumns: {
+        // Simple 16 column grid
+        '16': 'repeat(16, minmax(0, 1fr))',
+
+        // Complex site-specific column configuration
+        'services': ' minmax(795px, 1fr) 450px',
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
