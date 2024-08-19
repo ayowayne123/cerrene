@@ -5,6 +5,7 @@ import Discount from "./discount";
 import Who from "./whoweare";
 import Services from "./services";
 import Solution from "./solution";
+import Discover from "./discover";
 
 export default function Home() {
   return (
@@ -14,6 +15,8 @@ export default function Home() {
    <Discount/>
    <Who/>
    <Services/>
+   <Solution/>
+   <Discover/>
     </main>
   );
 }
