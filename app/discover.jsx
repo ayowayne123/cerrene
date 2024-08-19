@@ -18,7 +18,7 @@ const discoverData = [
 
 export default function Discover() {
     return (
-        <section className="w-full bg-cerreneLightGreen lg:h-[935px] relative overflow-hidden">
+        <section className="w-full  lg:h-[935px] relative overflow-hidden">
             
 
         </section>
