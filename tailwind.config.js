@@ -11,8 +11,8 @@ module.exports = {
       center: true,
       padding: {
         DEFAULT: "2rem",
-        sm: "1rem",
-        md: "1rem",
+        sm: "2rem",
+        md: "2rem",
         lg: "1rem",
         xl: "3.75rem",
 
@@ -29,10 +29,10 @@ satoshi: ["var(--font-satoshi)"]
         xl: "1440px",  // Custom size for extra-large screens
       },
       gridTemplateColumns: {
-        // Simple 16 column grid
-        '16': 'repeat(16, minmax(0, 1fr))',
+       
+        'reverse': '450px minmax(795px, 1fr) ',
 
-        // Complex site-specific column configuration
+       
         'services': ' minmax(795px, 1fr) 450px',
       },
       backgroundImage: {

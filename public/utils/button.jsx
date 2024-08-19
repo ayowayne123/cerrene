@@ -5,7 +5,7 @@ const Button = ({ className = '', type = 'primary', onClick, children }) => {
   // Determine the base classes based on button type (primary or secondary)
   const baseClasses = type === 'primary' 
     ? ' text-white  bg-cerreneOrange flex items-center justify-center pry-animated-button' 
-    : 'bg-transparent text-[#F07127] border-[#F07127]';
+    : 'bg-transparent text-cerreneOrange border-cerreneOrange flex items-center justify-center border animated-button';
 
 
 

@@ -4,6 +4,7 @@ import Photos from "./photogrid";
 import Discount from "./discount";
 import Who from "./whoweare";
 import Services from "./services";
+import Solution from "./solution";
 
 export default function Home() {
   return (

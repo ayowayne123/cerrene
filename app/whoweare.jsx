@@ -19,9 +19,9 @@ export default function Who() {
   ];
 
   return (
-    <section className="bg-cerreneBeige py-8 lg:h-[1080px] relative">
+    <section className="bg-cerreneBeige py-8 h-[850px] lg:h-[1080px] relative">
         <div>
-            <Image src={spiral} fill/>
+            <Image src={spiral} fill className="object-cover"/>
         </div>
       <div className="container z-10 absolute lg:top-8 lg:left-0 lg:right-0">
         <div className="lg:w-[918px] text-[#4e4e4e] font-satoshi font-medium lg:text-[40px] lg:pb-3">
@@ -31,7 +31,7 @@ export default function Who() {
         </div>
 
         {/* First Line of Images */}
-        <div className="flex gap-7 justify-between mt-12">
+        <div className="lg:flex gap-7 justify-between mt-12 hidden">
           {images.slice(0, 3).map((image, index) => (
             <div key={index} >
               <Image
@@ -46,7 +46,7 @@ export default function Who() {
         </div>
 
         {/* Second Line of Images */}
-        <div className="flex gap-7 justify-between my-7">
+        <div className="hidden lg:flex gap-7 justify-between my-7">
           {images.slice(3).map((image, index) => (
             <div key={index} >
               <Image
