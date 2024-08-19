@@ -109,7 +109,7 @@ export default function Services() {
 
    </div>
    <h1 className="leading-[110%] font-medium text-[36px] xl:text-[56px] lg:text-[48px]">Our Clients Speak For Themselves</h1>
-   <span className="font-satoshi text-xl flex my-6">At Cerrene, we believe in letting our work speak for itself. But don't just take our word for it—hear from our satisfied clients themselves.</span>
+   <span className="font-satoshi text-xl flex my-6">At Cerrene, we believe in letting our work speak for itself. But don&apos;t just take our word for it—hear from our satisfied clients themselves.</span>
    <div className="lg:gap-16 flex flex-col pb-4">{testimonialData.map((card, index) => (
                 <Testimonials type={card.type}
                  src={card.src} 
