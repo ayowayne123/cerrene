@@ -77,14 +77,14 @@ const testimonialData=[
   src:yinka,
   name: "Yinka Bamidele",
   occupation: "Author/Podcaster",
-  testimony: "As an author and podcaster, I need a clean and organized environment to stay focused and productive. Cerrene's cleaning services have been outstanding. Their team always leaves my workspace spotless. The peace of mind they provide allows me to concentrate on my creative work without any distractions."
+  testimony: "As an author and podcaster, I need a clean and organized environment to stay focused and productive. Cerrene`&apos;`s cleaning services have been outstanding. Their team always leaves my workspace spotless. The peace of mind they provide allows me to concentrate on my creative work without any distractions."
 
 },
 {
   src:tayo,
   name: "Tayo Adeoluwa",
   occupation: "CEO. Prime Tech",
-  testimony: "Cerrene's cleaning service has truly transformed my home. Their attention to detail is unmatched, and every surface sparkles when they're done. I couldn't be happier."
+  testimony: "Cerrene`&apos;`s cleaning service has truly transformed my home. Their attention to detail is unmatched, and every surface sparkles when they're done. I couldn't be happier."
 
 },
 ]
