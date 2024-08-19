@@ -84,7 +84,7 @@ const testimonialData=[
   src:tayo,
   name: "Tayo Adeoluwa",
   occupation: "CEO. Prime Tech",
-  testimony: "Cerrene`&apos;`s cleaning service has truly transformed my home. Their attention to detail is unmatched, and every surface sparkles when they're done. I couldn`&apos;`t be happier."
+  testimony: "Cerrene`&apos;`s cleaning service has truly transformed my home. Their attention to detail is unmatched, and every surface sparkles when they`&apos;`re done. I couldn`&apos;`t be happier."
 
 },
 ]

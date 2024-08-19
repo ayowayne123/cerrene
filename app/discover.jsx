@@ -10,6 +10,7 @@ const DiscoverSingle =()=>{
 
 const discoverData = [
     {
+        color:'bg-cerreneLightOrange',
         number:'01',
         title: 'Consultation & Assessment',
         text: "Contact Cerrene for a thorough consultation where we'll discuss your specific cleaning, electrical, or plumbing needs."

@@ -19,7 +19,7 @@ export default function Who() {
   ];
 
   return (
-    <section className="bg-cerreneBeige py-8 h-[850px] lg:h-[1080px] relative">
+    <section className="bg-cerreneLightOrange py-8 h-[850px] lg:h-[1080px] relative">
         <div>
             <Image src={spiral} fill className="object-cover"/>
         </div>
