@@ -5,7 +5,12 @@
 .gradientBall{
   @apply  bg-gradient-to-r from-[#33340E] from-5% via-[#4C4D16] via-65% to-[#B1B333] to-100%  overflow-hidden rounded-full absolute
 }
+.hollowText{
+	-webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 5px;
+    -webkit-text-stroke-color: #ffffff66;
 
+}
 .pry-animated-button {		
 	position: relative;	
 	transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);	

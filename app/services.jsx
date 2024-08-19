@@ -54,7 +54,7 @@ const serviceData = [
     src:cleanliness,
     heading:'Immaculate Cleanliness.' ,
     paragraph1:'Our cleaning services at Cerrene are more than just a wipe-down. We pride ourselves on delivering immaculate cleanliness that transforms your space into a sanctuary.',
-     paragraph2:'Whether it&apos;s your home, office, or commercial space, our meticulous attention to detail ensures a sparkling clean environment every time.'
+     paragraph2:'Whether it\'s your home, office, or commercial space, our meticulous attention to detail ensures a sparkling clean environment every time.'
   },
   {
     type:'reverse',
@@ -77,14 +77,14 @@ const testimonialData=[
   src:yinka,
   name: "Yinka Bamidele",
   occupation: "Author/Podcaster",
-  testimony: "As an author and podcaster, I need a clean and organized environment to stay focused and productive. Cerrene`&apos;`s cleaning services have been outstanding. Their team always leaves my workspace spotless. The peace of mind they provide allows me to concentrate on my creative work without any distractions."
+  testimony: "As an author and podcaster, I need a clean and organized environment to stay focused and productive. Cerrene\'s cleaning services have been outstanding. Their team always leaves my workspace spotless. The peace of mind they provide allows me to concentrate on my creative work without any distractions."
 
 },
 {
   src:tayo,
   name: "Tayo Adeoluwa",
   occupation: "CEO. Prime Tech",
-  testimony: "Cerrene`&apos;`s cleaning service has truly transformed my home. Their attention to detail is unmatched, and every surface sparkles when they`&apos;`re done. I couldn`&apos;`t be happier."
+  testimony: "Cerrene\'s cleaning service has truly transformed my home. Their attention to detail is unmatched, and every surface sparkles when they\'re done. I couldn\'t be happier."
 
 },
 ]

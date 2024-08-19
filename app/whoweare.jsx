@@ -21,7 +21,7 @@ export default function Who() {
   return (
     <section className="bg-cerreneLightOrange py-8 h-[850px] lg:h-[1080px] relative">
         <div>
-            <Image src={spiral} fill className="object-cover"/>
+            <Image src={spiral} alt='' fill className="object-cover"/>
         </div>
       <div className="container z-10 absolute lg:top-8 lg:left-0 lg:right-0">
         <div className="lg:w-[918px] text-[#4e4e4e] font-satoshi font-medium lg:text-[40px] lg:pb-3">

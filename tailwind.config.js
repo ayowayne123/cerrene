@@ -32,7 +32,7 @@ satoshi: ["var(--font-satoshi)"]
        
         'reverse': '450px minmax(795px, 1fr) ',
 
-       
+       'elevate': '445px minmax(795px, 1fr) ',
         'services': ' minmax(795px, 1fr) 450px',
       },
       backgroundImage: {
@@ -46,6 +46,7 @@ satoshi: ["var(--font-satoshi)"]
        cerreneOrange : "#F07127",
        cerreneDarkOrange : "#A24819",
        cerreneLightOrange: "#FFDBC5",
+       cerreneAltLightOrange: "#F6B087",
        cerreneYellow: "#F8FABF",
       }
     },

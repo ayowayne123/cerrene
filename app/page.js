@@ -6,6 +6,7 @@ import Who from "./whoweare";
 import Services from "./services";
 import Solution from "./solution";
 import Discover from "./discover";
+import Contact from "./contact";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
    <Services/>
    <Solution/>
    <Discover/>
+   <Contact/>
     </main>
   );
 }
