@@ -27,7 +27,7 @@ export default function Who() {
         <div className="lg:w-[918px] text-[#4e4e4e] font-satoshi font-medium lg:text-[40px] lg:pb-3">
           While you sit back and unwind, our expert team handles every aspect
           with precision and care. From scrubbing away grime to fixing faulty
-          wiring or leaky pipes, we've got you covered.
+          wiring or leaky pipes, we&apos;ve got you covered.
         </div>
 
         {/* First Line of Images */}
