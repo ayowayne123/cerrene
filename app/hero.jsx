@@ -1,8 +1,15 @@
 import Button from "@/public/utils/button";
+import Image from "next/image";
+
+import engineer from "@/public/images/constellations.svg"
 
 export default function Hero() {
   return (
-    <section className=" h-dvh w-full flex flex-col items-center justify-center gap-5 py-10 ">
+    <section className=" h-dvh w-full flex flex-col items-center justify-center gap-5 py-10 relative">
+    <div className="bg-white lg:h-[94px] absolute w-full inset-0 z-10">
+
+    </div>
+<Image src={engineer} alt='' fill />
         <div className="uppercase font-satoshi w-full text-sm text-cerreneLightGreen tracking-[4%] flex items-center justify-center relative">discover cerrene
 
         <div className="bg-cerreneLightGreen w-[140px] h-[20px] md:w-[200px] md:h-[32px] flex lg:h-[51px] xl:w-[595px] lg:w-[550px] absolute right-0 "></div>

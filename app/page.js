@@ -9,8 +9,10 @@ import Discover from "./discover";
 import Contact from "./contact";
 
 export default function Home() {
+
+  
   return (
-    <main className="">
+    <main >
    <Hero/>
    <Photos/>
    <Discount/>
@@ -18,6 +20,7 @@ export default function Home() {
    <Services/>
    <Solution/>
    <Discover/>
+
    <Contact/>
     </main>
   );

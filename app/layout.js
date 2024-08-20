@@ -1,10 +1,11 @@
 import { Literata } from "next/font/google";
 import "./globals.css";
+import Header from "./header";
 import localFont from "next/font/local";
 import Footer from "./footer";
 
 const literata = Literata({ 
-  subsets: ["latin"],
+  subsets: ["greek"],
 style: ['normal', 'italic'], 
 display: 'swap',}
 );
@@ -48,9 +49,11 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+
   return (
     <html lang="en">
-      <body className={`${satoshi.variable} ${literata.className}`}>{children}
+      <body className={`${satoshi.variable} ${literata.className}`}>
+      <Header  />{children}
       <Footer/></body>
     </html>
   );
