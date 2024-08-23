@@ -52,6 +52,7 @@ satoshi: ["var(--font-satoshi)"]
        cerreneLightOrange: "#FFDBC5",
        cerreneAltLightOrange: "#F6B087",
        cerreneYellow: "#F8FABF",
+       cerreneOffWhite: "#FFF7EB"
       }
     },
   },
