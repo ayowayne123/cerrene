@@ -41,6 +41,7 @@ satoshi: ["var(--font-satoshi)"]
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         'aboutBg':" url('/images/bgAbout.png')",
+        'aboutBg2':" url('/images/bgAbout.png')",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
