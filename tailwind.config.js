@@ -35,8 +35,12 @@ satoshi: ["var(--font-satoshi)"]
        'elevate': '445px minmax(795px, 1fr) ',
         'services': ' minmax(795px, 1fr) 450px',
       },
+      gridTemplateRows: {
+      'vertical': '364px 223px 364px',
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        'aboutBg':" url('/images/bgAbout.png')",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },

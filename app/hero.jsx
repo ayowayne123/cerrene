@@ -5,7 +5,7 @@ import engineer from "@/public/images/constellations.svg"
 
 export default function Hero() {
   return (
-    <section className=" h-dvh w-full flex flex-col items-center justify-center gap-5 py-10 relative">
+    <section className=" h-dvh w-full lg:min-h-[800px] flex flex-col items-center justify-center gap-5 py-10 relative">
     <div className="bg-white lg:h-[94px] absolute w-full inset-0 z-10">
 
     </div>
