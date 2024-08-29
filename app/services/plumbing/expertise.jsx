@@ -18,7 +18,7 @@ export default function Experience(){
                 </div>
                 <div className="flex flex-col gap-10 justify-center">
                     <h2 className="lg:text-[66px] xl:text-[72px] text-cerreneGreen  "> Plumbing <span className="italic">Perfection</span>: Cerrene&apos;s Expertise.</h2>
-                    <p className="lg:text-xl lg:w-[518px] font-satoshi leading-[140%]">Dive into a world of plumbing excellence with Cerrene. From leak repairs to installations, We've got you covered. Contact us today!</p>
+                    <p className="lg:text-xl lg:w-[518px] font-satoshi leading-[140%]">Dive into a world of plumbing excellence with Cerrene. From leak repairs to installations, We&apos;ve got you covered. Contact us today!</p>
                     <Link href='/contact' className="h-[60px] font-satoshi font-bold text-white  w-[277px] bg-cerreneOrange flex items-center justify-center rounded">Contact Us</Link> 
                 </div>
                
