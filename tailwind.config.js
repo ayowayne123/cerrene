@@ -49,7 +49,7 @@ satoshi: ["var(--font-satoshi)"]
        cerreneGreen : "#4C4D16",
        cerreneLightGreen : "#9CA11C",
        cerreneOrange : "#F07127",
-       cerreneDarkOrange : "#A24819",
+       cerreneDarkOrange : "#A24819 ",
        cerreneLightOrange: "#FFDBC5",
        cerreneAltLightOrange: "#F6B087",
        cerreneYellow: "#F8FABF",
