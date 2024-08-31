@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Dots from "@/public/utils/dots";
-import tapIconServices from "@/public/icons/tapIconServices.svg";
+import plugIconServices from "@/public/icons/plugIconServices.svg";
 
 const Imagecard = ({ title, text, services }) => {
   return (
@@ -19,7 +19,7 @@ const Imagecard = ({ title, text, services }) => {
             <div className="flex items-center font-normal gap-5" key={index}>
               <i className="relative size-7 ">
                 <Image
-                  src={tapIconServices}
+                  src={plugIconServices}
                   alt="tapIconServices"
                   className="object-contain"
                   fill
@@ -44,26 +44,26 @@ const Imagecard = ({ title, text, services }) => {
 const serviceList = [
   {
     title: "Residential",
-    text: "Our skilled team is dedicated to ensuring the integrity and functionality of your home's plumbing system, providing prompt and reliable service when you need it most.",
+    text: "Cerrene offers a variety of residential electrical services to meet the diverse needs of homeowners. Some of the residential electrical services.",
     services: [
-      "Leak detection and repair",
-      "Drain cleaning and unclogging",
-      "Fixture Installation and repair",
-      "Pipe repair and replacement",
-      "Plumbing system inspections & more",
+      "Electrical inspections",
+      "Electrical repairs",
+      "Lighting installation and repair",
+      "Electrical panel upgrades",
+      "Home automation installation & more",
     ],
   },
   {
     title: "Commercial",
-    text: "From comprehensive drain cleaning and restroom maintenance to kitchen plumbing and emergency repairs, we provide reliable solutions tailored to your commercial needs.",
+    text: "Cerrene provides a range of commercial electrical services to businesses and commercial establishments",
     services: [
-      "Commercial drain cleaning",
-      "Restroom plumbing",
-      "Water heater services",
-      "Backflow prevention",
-      "Gas Plumbing services",
-      "Pipe repair and replacement",
-      "Plumbing system inspections & more",
+      "Electrical system design and installation",
+      "Electrical upgrades and retrofits",
+      "Lighting design and installation",
+      "Electrical maintenance and repairs",
+      "Data and communication wiring",
+      "Energy efficiency solutions",
+      "Code compliance and safety inspections",
     ],
   },
 ];
@@ -73,7 +73,7 @@ export default function Services() {
     <section>
       <div className="container pb-24 pt-7">
         <h2 className="font-medium lg:text-[50px] xl:text-[56px] py-8 ">
-          Plumbing Services We Offer
+          Electrical Services We Offer
         </h2>
         <div className="grid  gap-y-16 gap-x-6">
           {serviceList.map((card, index) => (

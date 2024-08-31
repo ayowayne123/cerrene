@@ -5,15 +5,18 @@ import Success from "./success";
 import Expertise from "./expertise";
 import Discount from "./discount";
 
+export const metadata = {
+  title: "About CERRENE | Cerrene ",
+};
+
 export default function About() {
   return (
     <main className="">
-        <AboutHero/>
-        <Mission/>
-        <Success/>
-        <Expertise/>
-        <Discount/>
-  
+      <AboutHero />
+      <Mission />
+      <Success />
+      <Expertise />
+      <Discount />
     </main>
   );
 }
