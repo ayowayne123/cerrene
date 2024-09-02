@@ -4,7 +4,7 @@ import circles from "@/public/images/circles.svg";
 
 export default function Testimony({ text, username, occupation, src }) {
   return (
-    <div className="text-[#4e4e4e] border-2 w-full  p-10 border-cerreneLightGreen bg-cerreneYellow  ">
+    <div className="text-[#4e4e4e] border-2 w-full  p-10 border-cerreneLightGreen bg-cerreneYellow rounded-lg overflow-hidden ">
       <div className="flex items-center mb-4">
         {Array(5)
           .fill("")

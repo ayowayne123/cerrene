@@ -6,21 +6,21 @@ import Link from "next/link";
 
 function Testimonials() {
   return (
-    <section className=" container">
+    <section className=" container pb-4">
       <h2 className="font-medium lg:text-[50px] xl:text-[56px] py-8 ">
         Clients&apos; Testimonials
       </h2>
       <div className="grid grid-cols-2 gap-6">
         <Testimony
-          text={`Cerrene\'s cleaning service has been a game-changer for our office. Their attention to detail is remarkable, and they always leave our space looking pristine.`}
-          username="Francis O."
-          occupation="Lagos, Nigeria"
+          text={`Cerrene\'s team upgraded our entire office lighting system in Lagos, and the results were phenomenal. The team was professional and ensured minimal disruption to our operations. `}
+          username="Tunde K."
+          occupation="Business Owner"
           src={testimonials1}
         />
         <Testimony
-          text={`I can\'t thank Cerrene enough for their exceptional cleaning service. They transformed my home, and I couldn\'t be happier with the results.`}
-          username="Fatima M."
-          occupation="Gaborone, Botswana"
+          text={`I recently had Cerrene handle some electrical repairs in my home in Gaborone, and I couldn\'t be happier. Their expertise and attention to detail were evident from start to finish. `}
+          username="Naledi M."
+          occupation="Home Owner"
           src={testimonials2}
         />
       </div>

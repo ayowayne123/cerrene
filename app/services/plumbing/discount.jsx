@@ -6,19 +6,19 @@ export default function Discount() {
   return (
     <section className="w-full py-24  container">
       <div className="lg:h-[601px]  flex flex-row bg-cerreneDarkGreen gap-6  overflow-hidden">
-        <div className=" flex h-full rounded-2xl flex-shrink-0 w-2/3 flex-col items-center justify-center bg-cerreneGreen gap-12 ">
+        <div className=" flex h-full rounded-2xl flex-shrink-0 w-2/3 flex-col items-center justify-center bg-cerreneGreen gap-10 ">
           <div className="font-satoshi self-center italic text-cerreneYellow text-[32px] text-center leading-[130%] lg:w-[472px]  ">
             Ready to experience top-notch plumbing services?
           </div>
           <div className="flex flex-col gap-4">
             <Link
-              href="/"
+              href="/contact"
               className="h-[60px] font-satoshi font-bold text-cerreneYellow  w-[277px] bg-cerreneLightGreen flex items-center justify-center rounded"
             >
               Contact Us
             </Link>
             <Link
-              href="/"
+              href="/contact"
               className="h-[60px] font-satoshi font-bold text-cerreneLightGreen  w-[277px] border border-cerreneLightGreen flex items-center justify-center rounded"
             >
               Get Hired

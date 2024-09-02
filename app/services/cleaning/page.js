@@ -2,6 +2,7 @@ import Image from "next/image";
 import Experience from "./experience";
 import Services from "./services";
 import Serves from "./serves";
+import Testimonials from "./testimonials";
 import Discount from "./discount";
 
 export const metadata = {
@@ -14,6 +15,7 @@ export default function Cleaning() {
       <Experience />
       <Services />
       <Serves />
+      <Testimonials />
       <Discount />
     </main>
   );

@@ -1,18 +1,18 @@
 import Link from "next/link";
+import Image from "next/image";
+import tapDiscount from "@/public/images/tapDiscount.png";
 
 export default function Discount() {
   return (
     <section className="w-full py-24  container">
-      <div className="lg:h-[601px]  grid grid-cols-elevate bg-cerreneDarkOrange rounded-2xl overflow-hidden">
-        <div className="relative h-full">
-          <div className="h-full w-full absolute inset-0 bg-[#4E4E4E66] leading-[120%] text-white flex items-center justify-center font-semibold lg:text-[54px] lg:px-10">
+      <div className="lg:h-[601px] lg:w-[1000px]  bg-cerreneDarkOrange  overflow-hidden mx-auto">
+        <div className=" flex h-full rounded-2xl flex-shrink-0  flex-col items-center justify-center bg-cerrene gap-12 ">
+          <div className="font-medium self-center italic text-cerreneYellow lg:text-[48px] text-[32px] text-center leading-[130%] lg:w-[643px]  ">
             Get 15% off your first appointment with Cerrene!
           </div>
-        </div>
-        <div className=" flex h-full w-full flex-col items-center justify-center bg-cerreneDarkOrange gap-12 ">
-          <div className="font-satoshi self-center italic text-white text-[32px] text-center leading-[130%] lg:w-[649px]  ">
-            Whether it&apos;s your home or office, we ensure every corner is
-            spotless and inviting.
+          <div className="font-satoshi self-center italic text-cerreneYellow text-[32px] text-center leading-[130%] lg:w-[678px]  ">
+            Trust Cerrene&apos;s expert electricians to handle all your
+            electrical needs with precision and care.
           </div>
           <div className="flex flex-col gap-4">
             <Link

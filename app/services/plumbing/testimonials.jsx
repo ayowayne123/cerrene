@@ -12,13 +12,13 @@ function Testimonials() {
       </h2>
       <div className="grid grid-cols-2 gap-6">
         <Testimony
-          text="Cerrenes commercial plumbing service was exceptional. They responded promptly to our emergency call minimizing downtime for our business."
+          text={`Cerrene\'s commercial plumbing service was exceptional. They responded promptly to our emergency call minimizing downtime for our business`}
           username="James T."
           occupation="Business Owner"
           src={testimonials1}
         />
         <Testimony
-          text="Ive used Cerrene for several residential plumbing projects. Their team is knowledgeable and always goes above and beyond to ensure the job is done right."
+          text={`I\'ve used Cerrene for several residential plumbing projects. Their team is knowledgeable and always goes above and beyond to ensure the job is done right.`}
           username="Sarah P."
           occupation="Home Owner"
           src={testimonials2}
@@ -28,7 +28,7 @@ function Testimonials() {
         href="/testimonials"
         className="mt-10 border border-cerreneOrange text-cerreneOrange font-satoshi flex items-center justify-center lg:h-[60px] lg:w-[197px]"
       >
-        Learn More
+        See More
       </Link>
     </section>
   );
