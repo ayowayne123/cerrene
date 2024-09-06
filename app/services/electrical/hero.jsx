@@ -8,7 +8,8 @@ function Hero() {
     <section className="h-dvh min-h-[600px] max-h-[950px] overflow-hidden">
       <div className="bg-cerreneOffWhite lg:h-[94px]  w-full inset-0 z-10"></div>
 
-      <div className="relative lg:py-10 lg:h-full  font-medium container flex flex-row gap-10 overflow-hidden">
+<div className="relative h-full"> 
+      <div className=" lg:py-10 lg:h-full  font-medium container flex flex-row gap-10 overflow-hidden">
         <Image src={heroElectrical} alt="" fill className="object-cover" />
         <div className="bg-[#4C4D1666] absolute inset-0 h-full w-full text-[#FFF7EB]">
           <h1 className="leading-[120%] font-medium mx-auto lg:w-[680px] xl:w-[730px] lg:text-[66px] xl:text-[72px]  text-center lg:pt-28 xl:pt-32 ">
@@ -26,6 +27,7 @@ function Hero() {
             Contact Us
           </Link>
         </div>
+      </div>
       </div>
     </section>
   );

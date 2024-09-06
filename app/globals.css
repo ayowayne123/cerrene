@@ -126,3 +126,17 @@
     text-wrap: balance;
   }
 }
+
+.tri {
+	--r: 40px; /* the radius */
+	
+	width: 300px;
+	aspect-ratio: 1/cos(30deg);
+	mask:
+	  conic-gradient(from -30deg at 50% calc(200% - 3*var(--r)/2),#000 60deg,#0000 0)
+	   0 100%/100% calc(100% - 3*var(--r)/2) no-repeat,
+	  radial-gradient(var(--r) at 50% calc(2*var(--r)),#000 98%,#0000 101%),
+	  radial-gradient(var(--r),#000 98%,#0000 101%) space no-repeat
+	   0 100%/calc(2*tan(60deg)*var(--r)) calc(2*var(--r));
+	   clip-path: polygon(0 0, 50% 100%, 100% 0);
+  }
