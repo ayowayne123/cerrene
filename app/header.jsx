@@ -6,28 +6,45 @@ import logoDark from "@/public/images/logoDark.png";
 import logoLight from "@/public/images/logoLight.png";
 import doodle from "@/public/icons/doodle.svg"; // Import the doodle image
 import { usePathname } from "next/navigation";
+import { FaTimes } from "react-icons/fa";
+import { LiaTimesSolid } from "react-icons/lia";
+import { AiOutlineMenu, AiOutlineDown } from "react-icons/ai"; // Import the down arrow icon
 
 function Header() {
   const pathname = usePathname();
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false); // State to control mobile services accordion
+
+  const handleMenuClick = () => {
+    setMenuOpen(true);
+  };
+
+  const handleMenuClose = () => {
+    setMenuOpen(false);
+    setMobileServicesOpen(false); // Close services accordion when menu closes
+  };
+
+  const toggleMobileServices = () => {
+    setMobileServicesOpen((prevState) => !prevState); // Toggle the accordion
+  };
 
   return (
-    <header className="absolute inset-0 bg-transparent slg:h-[94px] h-[60px] md:h-[80px]  z-20">
+    <header className="md:absolute fixed inset-0 bg-white md:bg-transparent slg:h-[94px] h-[60px] md:h-[80px] z-40">
       <div className="h-full flex flex-row justify-between items-center container">
-        <Link
-          href="/"
-          className="relative  slg:h-[60px] slg:w-[120px] h-[40px] w-[80px] md:h-[72px] md:w-[140px] "
-        >
+        <Link href="/" className="relative h-[60px] w-[120px] md:flex hidden ">
           {pathname.includes("/about") ? (
             <Image src={logoLight} alt="logo" className="object-contain" fill />
           ) : (
             <Image src={logoDark} alt="logo" className="object-contain" fill />
           )}
         </Link>
+        <Link href="/" className="relative h-[60px] w-[120px] flex md:hidden ">
+          <Image src={logoDark} alt="logo" className="object-contain" fill />
+        </Link>
 
         <nav
-          className={`md:flex md:flex-row hidden  justify-center items-center lg:gap-[60px] slg:gap-[40px] md:gap-[32px]  font-light capitalize font-satoshi ${
+          className={`md:flex md:flex-row hidden justify-center items-center lg:gap-[60px] slg:gap-[40px] md:gap-[32px] font-light capitalize font-satoshi ${
             pathname.includes("/about") ? "text-cerreneYellow " : ""
           }`}
         >
@@ -53,7 +70,7 @@ function Header() {
             onMouseLeave={() => setIsServicesOpen(false)}
           >
             <div
-              className={`relative  z-10 ${
+              className={`relative z-10 ${
                 pathname.includes("/services") ? "font-bold capitalize" : ""
               }`}
             >
@@ -67,7 +84,7 @@ function Header() {
               )}
             </div>
             {isServicesOpen && (
-              <div className="absolute top-full -left-8 z-20 bg-white shadow-lg rounded-lg w-32 ">
+              <div className="absolute top-full -left-8 z-20 bg-white shadow-lg rounded-lg w-32">
                 <Link
                   href="/services/plumbing"
                   className="block px-2 py-1 text-sm text-[#4e4e4e] hover:bg-gray-200"
@@ -113,6 +130,121 @@ function Header() {
             contact us
           </Link>
         </nav>
+
+        {/* Mobile Menu Icon */}
+        <div className="md:hidden text-cerreneOrange" onClick={handleMenuClick}>
+          <AiOutlineMenu size={24} />
+        </div>
+
+        {/* Slider bar for mobile menu */}
+        <div
+          className={`fixed w-full transition-transform duration-500 ease-in-out bg-cerreneYellow h-screen inset-0 lg:hidden z-50 flex ${
+            !menuOpen ? "-translate-x-full" : ""
+          }`}
+        >
+          <div className="w-full h-full flex mx-auto items-center justify-center relative">
+            <div className="absolute top-[40px] right-12">
+              <LiaTimesSolid size={24} onClick={handleMenuClose} />
+            </div>
+            <nav className="flex flex-col font-semibold divide-y divide-cerreneOrange justify-center gap-5 w-60">
+              <Link
+                onClick={handleMenuClose}
+                href="/"
+                className={`cursor-pointer text-center pt-5 relative ${
+                  pathname == "/" ? "text-cerreneOrange font-bold" : ""
+                }`}
+              >
+                {pathname == "/" && (
+                  <Image
+                    src={doodle}
+                    alt="doodle"
+                    className="absolute top-2 left-0 right-0 w-full h-full object-contain  -z-10"
+                  />
+                )}
+                Home
+              </Link>
+
+              <Link
+                onClick={handleMenuClose}
+                href="/about"
+                className={`cursor-pointer text-center pt-5 relative ${
+                  pathname.includes("/about")
+                    ? "text-cerreneOrange font-bold"
+                    : ""
+                }`}
+              >
+                {pathname.includes("/about") && (
+                  <Image
+                    src={doodle}
+                    alt="doodle"
+                    className="absolute top-2 left-0 right-0 w-full h-full object-contain  -z-10"
+                  />
+                )}
+                About
+              </Link>
+
+              {/* Accordion-style Our Services section */}
+              <div className="cursor-pointer text-center pt-5 relative">
+                <div
+                  className={`flex justify-center items-center relative ${
+                    pathname.includes("/services")
+                      ? "text-cerreneOrange font-bold"
+                      : ""
+                  }`}
+                  onClick={toggleMobileServices}
+                >
+                  {pathname.includes("/services") && (
+                    <Image
+                      src={doodle}
+                      alt="doodle"
+                      className="absolute top-2 left-0 right-0 w-full h-full object-contain  -z-10"
+                    />
+                  )}
+                  Services <AiOutlineDown className="ml-2" />
+                </div>
+
+                {/* Sub-services accordion content */}
+                {mobileServicesOpen && (
+                  <div className="flex flex-col   rounded-lg mt-2">
+                    <Link
+                      href="/services/plumbing"
+                      className="block px-4 py-2 text-sm text-cerreneGreen"
+                      onClick={handleMenuClose}
+                    >
+                      Plumbing
+                    </Link>
+                    <Link
+                      href="/services/electrical"
+                      className="block px-4 py-2 text-sm text-cerreneGreen"
+                      onClick={handleMenuClose}
+                    >
+                      Electrical Services
+                    </Link>
+                    <Link
+                      href="/services/cleaning"
+                      className="block px-4 py-2 text-sm text-cerreneGreen"
+                      onClick={handleMenuClose}
+                    >
+                      Cleaning Services
+                    </Link>
+                  </div>
+                )}
+              </div>
+
+              <Link
+                onClick={handleMenuClose}
+                href="/blog"
+                className={`cursor-pointer text-center pt-5 ${
+                  pathname.includes("/blog")
+                    ? "text-cerreneOrange font-bold"
+                    : ""
+                }`}
+              >
+                Blog
+              </Link>
+            </nav>
+          </div>
+        </div>
       </div>
     </header>
   );
