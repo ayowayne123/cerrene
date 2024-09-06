@@ -14,6 +14,7 @@ module.exports = {
         DEFAULT: "2rem",
         sm: "2rem",
         md: "2rem",
+        slg: "2rem",
         lg: "1rem",
         xl: "3.75rem",
       },
@@ -24,14 +25,19 @@ module.exports = {
 
     extend: {
       screens: {
-        lg: "1280px", // Custom size for large screens
+        md: "768px", // Custom size for medium screens
+        slg: "1024px", // Custom size for smaller laptop screens
+        lg: "1280px", // Custom size for laptop screens
         xl: "1440px", // Custom size for extra-large screens
       },
       gridTemplateColumns: {
-        reverse: "450px minmax(795px, 1fr) ",
-
+        reverse: "450px minmax(750px, 1fr) ",
+        reverseSmall: "360px minmax(550px, 1fr) ",
+        reverseMd: "300px minmax(330px, 1fr) ",
         elevate: "445px minmax(795px, 1fr) ",
-        services: " minmax(795px, 1fr) 450px",
+        services: " minmax(750px, 1fr) 450px",
+        servicesSmall: " minmax(550px, 1fr) 360px",
+        servicesMd: " minmax(330px, 1fr) 300px",
       },
       gridTemplateRows: {
         vertical: "364px 223px 364px",

@@ -15,17 +15,17 @@ export default function Hero() {
       />
       <div className="uppercase font-satoshi w-full text-sm text-cerreneLightGreen animate-slide-up tracking-[4%] flex items-center justify-center relative z-20">
         discover cerrene
-        <div className="bg-cerreneLightGreen w-[140px] h-[20px] md:w-[200px] md:h-[32px] hidden lg:flex lg:h-[51px] xl:w-[595px] lg:w-[550px] absolute right-0  animate-slide-in-right"></div>
+        <div className="bg-cerreneLightGreen w-[140px] h-[20px] md:w-[300px] slg:w-[400px] md:h-[32px] slg:h-[44px] hidden md:flex lg:h-[51px] xl:w-[595px] lg:w-[550px] absolute right-0  animate-slide-in-right"></div>
       </div>
       <p
-        className="lg:w-[858px] animate-slide-up delay-400 font-literata font-medium text-[43px] lg:text-[80px] z-20  text-center text-cerreneGreen"
+        className="slg:w-[858px] animate-slide-up delay-400 font-literata font-medium text-[48px] md:text-[56px] slg:text-[70px] lg:text-[80px] z-20  text-center text-cerreneGreen"
         style={{ opacity: 0, animationDelay: "0.25s" }}
       >
         <span className="italic font-semibold">Sparkling </span> Clean Meets{" "}
         <span className="italic font-semibold">Reliable</span> Repair.
       </p>
       <div
-        className="text-[14px] animate-slide-up delay-600 z-20 leading-[24px] text-center font-satoshi lg:w-[648px] lg:text-lg"
+        className="text-[14px] animate-slide-up delay-600 z-20 leading-[24px] text-center font-satoshi md:w-[648px] md:text-lg px-3 lg:px-0"
         style={{ opacity: 0, animationDelay: "0.5s" }}
       >
         We don&apos;t just clean or fix – we elevate. From pristine cleanliness

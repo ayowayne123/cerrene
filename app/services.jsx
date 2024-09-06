@@ -11,31 +11,33 @@ import Link from "next/link";
 const Service = ({ type, src, heading, paragraph1, paragraph2, href }) => {
   return (
     <div
-      className={`grid  lg:gap-10 ${
-        type == "reverse" ? "lg:grid-cols-reverse" : "lg:grid-cols-services"
+      className={`grid  md:gap-6 xl:gap-10 ${
+        type == "reverse"
+          ? "lg:grid-cols-reverse slg:grid-cols-reverseSmall md:grid-cols-reverseMd"
+          : "lg:grid-cols-services slg:grid-cols-servicesSmall md:grid-cols-servicesMd"
       } `}
     >
-      <div className="relative lg:w-full lg:h-[612px] w-[311px] h-60 ">
+      <div className="relative md:w-full lg:h-[612px] md:h-[450px] slg:h-[500px] w-[311px] h-60 ">
         <Image src={src} alt="" className="object-cover" fill />
       </div>
       <div
         className={`flex flex-col justify-center ${
-          type == "reverse" ? "lg:order-first" : ""
+          type == "reverse" ? "md:order-first" : ""
         } `}
       >
         <h1 className="lg:text-[48px] text-[32px] font-medium leading-[130%] mb-6 lg:mb-11">
           {" "}
           {heading}
         </h1>
-        <p className="font-satoshi text-sm md:text-base lg:text-xl  mb-4">
+        <p className="font-satoshi text-sm md:text-base slg:text-lg lg:text-xl  mb-4">
           {paragraph1}
         </p>
-        <p className="font-satoshi text-sm md:text-base lg:text-xl lg:mt-4">
+        <p className="font-satoshi text-sm md:text-base slg:text-lg lg:text-xl lg:mt-4">
           {paragraph2}
         </p>
         <Link
           href={href}
-          className="mt-10 border border-cerreneOrange text-cerreneOrange font-satoshi flex items-center justify-center lg:h-[60px] lg:w-[197px]"
+          className="mt-10 border border-cerreneOrange text-cerreneOrange font-satoshi flex items-center justify-center slg:h-[60px] slg:w-[197px] h-[48px] w-[160px] "
         >
           Learn More
         </Link>
@@ -46,8 +48,8 @@ const Service = ({ type, src, heading, paragraph1, paragraph2, href }) => {
 
 const Testimonials = ({ name, occupation, src, testimony }) => {
   return (
-    <div className="grid grid-cols-2 gap-10 px-20">
-      <div className="w-full max-w-[600px] relative">
+    <div className="grid slg:grid-cols-2 gap-10 lg:px-20 w-full">
+      <div className="w-full slg:max-w-[600px] relative">
         <div className="w-full h-[464px] relative">
           <Image
             src={src}
@@ -56,11 +58,11 @@ const Testimonials = ({ name, occupation, src, testimony }) => {
             fill
           />
         </div>
-        <h2 className="font-medium lg:py-4 text-[32px] text-center">{name}</h2>
+        <h2 className="font-medium slg:py-4 text-[32px] text-center">{name}</h2>
         <p className="font-satoshi  text-xl text-center">{occupation}</p>
       </div>
       <div className="flex flex-col justify-start gap-16">
-        <div className="lg:text-[32px] relative w-full">
+        <div className="lg:text-[32px] slg:text-[28px] leading-[140%] relative w-full">
           {" "}
           <span className="font-satoshi">{testimony}</span>
           <div className="absolute -bottom-10 right-0 ">
@@ -75,7 +77,7 @@ const Testimonials = ({ name, occupation, src, testimony }) => {
           </div>
         </div>
         <Link
-          className="border-cerreneOrange text-cerreneOrange flex items-center justify-center border lg:h-[60px] lg:w-[197px]"
+          className="border-cerreneOrange text-cerreneOrange flex items-center justify-center border slg:h-[60px] slg:w-[197px]"
           href="/"
         >
           See more
@@ -137,8 +139,8 @@ const testimonialData = [
 
 export default function Services() {
   return (
-    <section className="text-[#4e4e4e] py-24 container">
-      <h1 className="leading-[110%] font-medium text-[36px] xl:text-[56px] lg:text-[48px]">
+    <section className="text-[#4e4e4e] lg:py-24 slg:py-20 md:py-16 py-12 container">
+      <h1 className="leading-[110%] font-medium text-[36px] md:text-[40px] xl:text-[56px] lg:text-[48px]">
         Discover Our <span className="italic">Comprehensive</span> Services
       </h1>
       <div className="py-6 gap-6 lg:gap-6 flex flex-col">
@@ -162,7 +164,7 @@ export default function Services() {
         don&apos;t just take our word for it—hear from our satisfied clients
         themselves.
       </span>
-      <div className="lg:gap-16 flex flex-col pb-4">
+      <div className="lg:gap-16  slg:gap-8 flex slg:flex-col flex-row shrink-0 w-full overflow-x-scroll pb-4">
         {testimonialData.map((card, index) => (
           <Testimonials
             type={card.type}
