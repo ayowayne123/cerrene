@@ -43,6 +43,7 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+
       colors: {
         cerreneGreen: "#4C4D16",
         cerreneLightGreen: "#9CA11C",

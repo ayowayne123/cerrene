@@ -3,15 +3,16 @@ import "./globals.css";
 import Header from "./header";
 import localFont from "next/font/local";
 import Footer from "./footer";
+import "./animations.css";
 
-const literata = Literata({ 
+const literata = Literata({
   subsets: ["greek"],
-style: ['normal', 'italic'], 
-display: 'swap',}
-);
+  style: ["normal", "italic"],
+  display: "swap",
+});
 
 const satoshi = localFont({
-  src:[
+  src: [
     {
       path: "../public/fonts/Satoshi-Light.otf",
       weight: "300",
@@ -38,10 +39,8 @@ const satoshi = localFont({
       style: "normal",
     },
   ],
-  variable : "--font-satoshi",
-},
-
-)
+  variable: "--font-satoshi",
+});
 
 export const metadata = {
   title: "CERRENE",
@@ -49,12 +48,13 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-
   return (
     <html lang="en">
       <body className={`${satoshi.variable} ${literata.className}`}>
-      <Header  />{children}
-      <Footer/></body>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
