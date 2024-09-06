@@ -10,11 +10,15 @@ import { usePathname } from "next/navigation";
 function Header() {
   const pathname = usePathname();
   const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="absolute inset-0 bg-transparent lg:h-[94px] h-[60px] md:h-[72px]  z-20">
+    <header className="absolute inset-0 bg-transparent slg:h-[94px] h-[60px] md:h-[80px]  z-20">
       <div className="h-full flex flex-row justify-between items-center container">
-        <Link href="/" className="relative lg:h-[60px] lg:w-[120px]">
+        <Link
+          href="/"
+          className="relative  slg:h-[60px] slg:w-[120px] h-[40px] w-[80px] md:h-[72px] md:w-[140px] "
+        >
           {pathname.includes("/about") ? (
             <Image src={logoLight} alt="logo" className="object-contain" fill />
           ) : (
@@ -23,7 +27,7 @@ function Header() {
         </Link>
 
         <nav
-          className={`lg:flex lg:flex-row hidden flex-col justify-center items-center gap-[60px] font-light capitalize font-satoshi ${
+          className={`md:flex md:flex-row hidden  justify-center items-center lg:gap-[60px] slg:gap-[40px] md:gap-[32px]  font-light capitalize font-satoshi ${
             pathname.includes("/about") ? "text-cerreneYellow " : ""
           }`}
         >

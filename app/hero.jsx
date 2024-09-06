@@ -6,7 +6,7 @@ import constellations from "@/public/images/constellations.svg";
 export default function Hero() {
   return (
     <section className=" h-dvh w-full lg:min-h-[800px] min-h-[650px] flex flex-col items-center justify-center gap-5 py-10 relative">
-      <div className="bg-white lg:h-[94px] h-[60px] md:h-[72px] absolute w-full inset-0 z-10"></div>
+      <div className="bg-white slg:h-[94px] h-[60px] md:h-[80px] absolute w-full inset-0 z-10"></div>
       <Image
         src={constellations}
         alt=""

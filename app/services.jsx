@@ -62,22 +62,22 @@ const Testimonials = ({ name, occupation, src, testimony }) => {
         <p className="font-satoshi  text-xl text-center">{occupation}</p>
       </div>
       <div className="flex flex-col justify-start gap-16">
-        <div className="lg:text-[32px] slg:text-[28px] leading-[140%] relative w-full">
+        <div className="lg:text-[32px] slg:text-[28px] leading-[140%] md:text-[22px] relative w-full">
           {" "}
           <span className="font-satoshi">{testimony}</span>
-          <div className="absolute -bottom-10 right-0 ">
-            <div className="relative h-20 w-20">
+          <div className="absolute md:-bottom-10 right-0 ">
+            <div className="relative md:h-20 h-12 w-12 md:w-20">
               <Image
                 src={quote}
                 alt=""
-                className="object-contain w-20 flex"
+                className="object-contain md:w-20 w-12 flex"
                 fill
               />
             </div>
           </div>
         </div>
         <Link
-          className="border-cerreneOrange text-cerreneOrange flex items-center justify-center border slg:h-[60px] slg:w-[197px]"
+          className="border-cerreneOrange text-cerreneOrange flex items-center justify-center border h-[48px] w-[160px]  slg:h-[60px] slg:w-[197px]"
           href="/"
         >
           See more
@@ -156,15 +156,15 @@ export default function Services() {
           />
         ))}
       </div>
-      <h1 className="leading-[110%] font-medium text-[36px] xl:text-[56px] lg:text-[48px]">
+      <h1 className="leading-[110%] font-medium text-[36px] xl:text-[56px] lg:text-[48px] mt-5 md:mt-8 slg:mt-2">
         Our Clients Speak For Themselves
       </h1>
-      <span className="font-satoshi text-xl flex my-6">
+      <span className="font-satoshi md:text-xl flex my-6">
         At Cerrene, we believe in letting our work speak for itself. But
         don&apos;t just take our word for it—hear from our satisfied clients
         themselves.
       </span>
-      <div className="lg:gap-16  slg:gap-8 flex slg:flex-col flex-row shrink-0 w-full overflow-x-scroll pb-4">
+      <div className="lg:gap-16  gap-6 slg:gap-8 flex flex-col shrink-0 w-full overflow-x-scroll pb-4">
         {testimonialData.map((card, index) => (
           <Testimonials
             type={card.type}
