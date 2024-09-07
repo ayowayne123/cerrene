@@ -42,6 +42,7 @@ module.exports = {
       gridTemplateRows: {
         vertical: "364px 223px 364px",
         verticalSmall: "300px 200px 300px",
+        verticalMd: "200px 120px 200px",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
