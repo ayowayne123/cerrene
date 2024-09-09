@@ -11,7 +11,7 @@ export const metadata = {
 
 export default function Cleaning() {
   return (
-    <main className="bg-cerreneOffWhite text-[#4e4e4e]">
+    <main className="bg-cerreneOffWhite text-[#4e4e4e] overflow-hidden">
       <Experience />
       <Services />
       <Serves />

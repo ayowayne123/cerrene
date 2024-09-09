@@ -4,7 +4,7 @@ import circles from "@/public/images/circles.svg";
 
 export default function Testimony({ text, username, occupation, src }) {
   return (
-    <div className="text-[#4e4e4e] border-2 w-full  p-10 border-cerreneLightGreen bg-cerreneYellow rounded-lg overflow-hidden ">
+    <div className="text-[#4e4e4e] border-2 w-full md:p-6 p-10  slg:p-10 border-cerreneLightGreen bg-cerreneYellow rounded-lg overflow-hidden ">
       <div className="flex items-center mb-4">
         {Array(5)
           .fill("")
@@ -25,15 +25,15 @@ export default function Testimony({ text, username, occupation, src }) {
             </span>
           ))}
       </div>
-      <div className="lg:w-[460px] xl:w-[505px] leading-[130%] lg:text-[28px] xl:text-[32px]  font-satoshi">
+      <div className="lg:w-[460px] xl:w-[505px] leading-[130%] slg:text-[28px] xl:text-[32px] text-[20px]   font-satoshi">
         {text}
       </div>
-      <div className="lg:pt-12 lg:pb-8 flex flex-row gap-4">
+      <div className="lg:pt-12 lg:pb-8 py-6 flex flex-row gap-4 items-center">
         <div className="relative h-20 w-20 rounded-full overflow-hidden">
           <Image src={src} alt="circles" className="object-contain" fill />
         </div>
         <div className="flex-col flex ">
-          <div className="font-semibold lg:text-[28px] xl:text-[32px]">
+          <div className="font-semibold text-[20px] slg:text-[28px] xl:text-[32px]">
             {username}
           </div>
           <div className="font-satoshi">{occupation}</div>

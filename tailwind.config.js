@@ -35,6 +35,8 @@ module.exports = {
         reverseSmall: "360px minmax(550px, 1fr) ",
         reverseMd: "300px minmax(330px, 1fr) ",
         elevate: "445px minmax(795px, 1fr) ",
+        elevateSmall: "360px minmax(560px, 1fr) ",
+        elevateMd: "300px minmax(340px, 1fr) ",
         services: " minmax(750px, 1fr) 450px",
         servicesSmall: " minmax(550px, 1fr) 360px",
         servicesMd: " minmax(330px, 1fr) 300px",

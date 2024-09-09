@@ -7,10 +7,10 @@ import Link from "next/link";
 function Testimonials() {
   return (
     <section className=" container">
-      <h2 className="font-medium lg:text-[50px] xl:text-[56px] py-8 ">
+      <h2 className="font-medium lg:text-[50px] xl:text-[56px] md:text-[40px] py-8 text-[24px] ">
         Clients&apos; Testimonials
       </h2>
-      <div className="grid grid-cols-2 gap-6">
+      <div className="grid md:grid-cols-2 slg:gap-6 md:gap-4 gap-6 ">
         <Testimony
           text={`Cerrene\'s cleaning service has been a game-changer for our office. Their attention to detail is remarkable, and they always leave our space looking pristine.`}
           username="Francis O."
@@ -26,7 +26,7 @@ function Testimonials() {
       </div>
       <Link
         href="/testimonials"
-        className="mt-10 border border-cerreneOrange text-cerreneOrange font-satoshi flex items-center justify-center lg:h-[60px] lg:w-[197px]"
+        className="mt-10 border border-cerreneOrange text-cerreneOrange font-satoshi flex items-center justify-center slg:h-[60px] slg:w-[197px] h-[48px] w-[160px] "
       >
         See More
       </Link>
