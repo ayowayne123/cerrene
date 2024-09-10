@@ -15,10 +15,7 @@ export default function Discount() {
             spotless and inviting.
           </div>
           <div className="flex flex-col gap-4">
-            <Link
-              href="/contact"
-              className="h-[60px] font-satoshi font-bold text-white  w-[277px] bg-cerreneOrange flex items-center justify-center rounded"
-            >
+            <Link href="/" className="orangeSolidButton">
               Contact Us
             </Link>
             <Link

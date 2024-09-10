@@ -9,19 +9,17 @@ import Discover from "./discover";
 import Contact from "./contact";
 
 export default function Home() {
-
-  
   return (
-    <main >
-   <Hero/>
-   <Photos/>
-   <Discount/>
-   <Who/>
-   <Services/>
-   <Solution/>
-   <Discover/>
+    <main className="overflow-hidden">
+      <Hero />
+      <Photos />
+      <Discount />
+      <Who />
+      <Services />
+      <Solution />
+      <Discover />
 
-   <Contact/>
+      <Contact />
     </main>
   );
 }

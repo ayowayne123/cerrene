@@ -1,5 +1,6 @@
 import Button from "@/public/utils/button";
 import Image from "next/image";
+import Link from "next/link";
 
 import constellations from "@/public/images/constellations.svg";
 
@@ -32,13 +33,13 @@ export default function Hero() {
         to expert repairs, we&apos;re dedicated to exceeding your expectations
         every step of the way.
       </div>
-      <Button
-        type="primary"
-        className="w-[220px] animate-fade-in z-20 h-12 rounded-sm bg-cerreneOrange"
-        style={{ opacity: 0, animationDelay: "15s" }}
+      <Link
+        href="/"
+        className="orangeSolidButton animate-fade-in"
+        style={{ opacity: 0, animationDelay: "1s" }}
       >
         Contact Us
-      </Button>
+      </Link>
       <div className="bg-cerreneLightGreen w-[140px] h-[20px] md:w-[200px] md:h-[32px] flex lg:h-[51px] xl:w-[335px] lg:w-[300px] absolute left-0 bottom-0 animate-slide-in-left"></div>
     </section>
   );

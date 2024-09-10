@@ -6,6 +6,7 @@ import whoweare4 from "@/public/images/whoweare4.png";
 import whoweare5 from "@/public/images/whoweare5.png";
 import whoweare6 from "@/public/images/whoweare6.png";
 import spiral from "@/public/images/spiral.svg";
+import Link from "next/link";
 import Button from "@/public/utils/button";
 
 export default function Who() {
@@ -78,12 +79,9 @@ export default function Who() {
             </div>
           ))}
         </div>
-        <Button
-          type="primary"
-          className="w-[220px] h-12 rounded-sm bg-cerreneOrange"
-        >
+        <Link href="/" className="orangeSolidButton">
           Contact Us
-        </Button>
+        </Link>
       </div>
     </section>
   );

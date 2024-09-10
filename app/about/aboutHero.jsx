@@ -1,4 +1,4 @@
-import Button from "@/public/utils/button";
+import Link from "next/link";
 import Image from "next/image";
 import leaf from "@/public/images/leaf.png";
 import handgloves from "@/public/images/handgloves.png";
@@ -15,12 +15,12 @@ export default function AboutHero() {
           Delve into Cerrene&apos;s roots, where passion & expertise converge to
           redefine cleanliness and repair services.
         </div>
-        <Button
-          type="primary"
-          className="w-[220px] h-12 rounded-sm bg-cerreneOrange"
+        <Link
+          href="/contact"
+          className="h-[60px] mx-auto font-satoshi font-bold text-white  w-[277px] bg-cerreneOrange flex items-center justify-center rounded"
         >
           Contact Us
-        </Button>
+        </Link>
       </div>
 
       <div className=" absolute inset-0 -z-10">

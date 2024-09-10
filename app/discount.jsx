@@ -1,4 +1,5 @@
 import Button from "@/public/utils/button";
+import Link from "next/link";
 import Image from "next/image";
 import circles from "@/public/images/circles.svg";
 
@@ -17,13 +18,9 @@ export default function Discount() {
               Whether you need cleaning, electrical, or plumbing services, our
               expert team is ready to assist you.
             </div>
-            <Button
-              type="primary"
-              className="w-[220px] h-12 rounded-sm bg-cerreneOrange text-white place-self-center slg:place-self-start"
-            >
-              {" "}
+            <Link href="/" className="orangeSolidButton">
               Contact Us
-            </Button>
+            </Link>
           </div>
 
           {/* Right Section: Image */}

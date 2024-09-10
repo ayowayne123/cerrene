@@ -5,7 +5,6 @@ import electrical from "@/public/images/electrical.png";
 import yinka from "@/public/images/yinka.png";
 import tayo from "@/public/images/tayo.png";
 import quote from "@/public/images/quote.png";
-import Button from "@/public/utils/button";
 import Link from "next/link";
 
 const Service = ({ type, src, heading, paragraph1, paragraph2, href }) => {

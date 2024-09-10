@@ -5,6 +5,14 @@
 .gradientBall {
   @apply bg-gradient-to-r from-[#33340E] from-5% via-[#4C4D16] via-65% to-[#B1B333] to-100%  overflow-hidden rounded-full absolute;
 }
+
+.orangeSolidButton {
+  @apply h-[60px] font-satoshi font-bold text-white  w-[277px] bg-cerreneOrange flex items-center justify-center rounded;
+}
+
+.orangeBorderButton {
+  @apply p-3;
+}
 .hollowText {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 5px;

@@ -16,10 +16,7 @@ export default function Experience() {
           className="absolute h-9 w-9 rotate-[23deg] md:rotate-0 md:w-[82px] md:h-[84px] object-contain md:bottom-20 xl:bottom-[91px] md:-right-24 -right-9 bottom-6"
         />
       </div>
-      <Link
-        href="/contact"
-        className="h-[60px] mx-auto my-9 font-satoshi font-bold text-white  w-[277px] bg-cerreneOrange hidden md:flex items-center justify-center rounded"
-      >
+      <Link href="/" className="orangeSolidButton">
         Contact Us
       </Link>
       <div className="w-full md:h-[357px] h-[390px] relative  z-10 ">

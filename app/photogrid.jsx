@@ -1,4 +1,3 @@
-import Button from "@/public/utils/button";
 import bottle from "@/public/images/bottle-tissue.png";
 import tape from "@/public/images/tape.png";
 import sitting from "@/public/images/sitting-room.png";
