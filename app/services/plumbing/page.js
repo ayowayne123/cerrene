@@ -10,7 +10,7 @@ export const metadata = {
 };
 export default function Plumbing() {
   return (
-    <main className="bg-cerreneOffWhite text-[#4e4e4e]">
+    <main className="bg-cerreneOffWhite text-[#4e4e4e] overflow-hidden">
       <Expertise />
       <Services />
       <Serves />

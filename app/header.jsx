@@ -30,7 +30,7 @@ function Header() {
   };
 
   return (
-    <header className="md:absolute fixed inset-0 bg-white md:bg-transparent slg:h-[94px] h-[60px] md:h-[80px] z-40">
+    <header className="md:absolute fixed inset-0 bg-white md:bg-transparent slg:h-[94px] h-[60px] md:h-[80px] z-40 ">
       <div className="h-full flex flex-row justify-between items-center container">
         <Link href="/" className="relative h-[60px] w-[120px] md:flex hidden ">
           {pathname.includes("/about") ? (
@@ -84,12 +84,12 @@ function Header() {
               )}
             </div>
             {isServicesOpen && (
-              <div className="absolute top-full -left-8 z-20 bg-white shadow-lg rounded-lg w-32">
+              <div className="absolute top-full -left-8 z-20 bg-white shadow-lg rounded-lg w-32 ">
                 <Link
                   href="/services/plumbing"
                   className="block px-2 py-1 text-sm text-[#4e4e4e] hover:bg-gray-200"
                 >
-                  Plumbing
+                  Plumbing Services
                 </Link>
                 <Link
                   href="/services/electrical"
@@ -132,13 +132,16 @@ function Header() {
         </nav>
 
         {/* Mobile Menu Icon */}
-        <div className="md:hidden text-cerreneOrange" onClick={handleMenuClick}>
+        <div
+          className="md:hidden  text-cerreneOrange"
+          onClick={handleMenuClick}
+        >
           <AiOutlineMenu size={24} />
         </div>
 
         {/* Slider bar for mobile menu */}
         <div
-          className={`fixed w-full transition-transform duration-500 ease-in-out bg-cerreneYellow h-screen inset-0 lg:hidden z-50 flex ${
+          className={`fixed overflow-hidden w-full transition-transform duration-500 ease-in-out bg-cerreneYellow h-screen inset-0 lg:hidden z-50 flex ${
             !menuOpen ? "-translate-x-full" : ""
           }`}
         >
@@ -197,7 +200,7 @@ function Header() {
                     <Image
                       src={doodle}
                       alt="doodle"
-                      className="absolute top-2 left-0 right-0 w-full h-full object-contain  -z-10"
+                      className="absolute top-0 left-0 right-0 w-full h-full object-contain scale-[220%]   -z-10"
                     />
                   )}
                   Services <AiOutlineDown className="ml-2" />
@@ -211,7 +214,7 @@ function Header() {
                       className="block px-4 py-2 text-sm text-cerreneGreen"
                       onClick={handleMenuClose}
                     >
-                      Plumbing
+                      Plumbing Services
                     </Link>
                     <Link
                       href="/services/electrical"

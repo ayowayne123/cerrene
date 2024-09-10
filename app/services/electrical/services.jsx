@@ -73,7 +73,7 @@ export default function Services() {
   return (
     <section>
       <div className="container pb-24 pt-7">
-        <h2 className="font-medium lg:text-[50px] xl:text-[56px] py-8 ">
+        <h2 className="font-medium slg:text-[50px] xl:text-[56px] text-[24px] md:text-[40px] py-8 ">
           Electrical Services We Offer
         </h2>
         <div className="grid  gap-y-16 gap-x-6">
