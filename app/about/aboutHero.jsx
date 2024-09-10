@@ -5,7 +5,7 @@ import handgloves from "@/public/images/handgloves.png";
 
 export default function AboutHero() {
   return (
-    <section className=" h-dvh w-full  lg:min-h-[800px]  relative bg-cerreneLightGreen -z-10 overflow-hidden">
+    <section className=" h-screen w-full  lg:min-h-[800px]  relative bg-cerreneLightGreen -z-10 overflow-hidden">
       <div className=" slg:pt-[94px] md:pt-[80px] pt-[60px] flex flex-col md:items-start items-center justify-center gap-6 slg:gap-10 py-10 container z-10">
         <div className="lg:mt-[140px] mt-[70px] flex-wrap font-literata justify-center font-medium  text-[43px] whitespace-pre lg:text-[72px] text-center slg:text-left text-white flex flex-row">
           <span className="italic font-semibold">Exploring </span>
