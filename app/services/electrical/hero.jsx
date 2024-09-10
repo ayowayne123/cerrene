@@ -20,10 +20,7 @@ function Hero() {
               Cerrene&apos;s electrical services bring power, precision, and
               peace of mind to your home or business.
             </p>
-            <Link
-              href="/contact"
-              className="h-[60px] mx-auto font-satoshi font-bold text-white  w-[277px] bg-cerreneOrange flex items-center justify-center rounded"
-            >
+            <Link href="/" className="orangeSolidButton mx-auto">
               Contact Us
             </Link>
           </div>

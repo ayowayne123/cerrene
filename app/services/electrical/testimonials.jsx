@@ -6,11 +6,11 @@ import Link from "next/link";
 
 function Testimonials() {
   return (
-    <section className=" container pb-4">
-      <h2 className="font-medium lg:text-[50px] xl:text-[56px] py-8 ">
+    <section className=" container">
+      <h2 className="font-medium lg:text-[50px] xl:text-[56px] md:text-[40px] py-8 text-[24px] ">
         Clients&apos; Testimonials
       </h2>
-      <div className="grid grid-cols-2 gap-6">
+      <div className="grid md:grid-cols-2 slg:gap-6 md:gap-4 gap-6 ">
         <Testimony
           text={`Cerrene\'s team upgraded our entire office lighting system in Lagos, and the results were phenomenal. The team was professional and ensured minimal disruption to our operations. `}
           username="Tunde K."
@@ -24,10 +24,7 @@ function Testimonials() {
           src={testimonials2}
         />
       </div>
-      <Link
-        href="/testimonials"
-        className="mt-10 border border-cerreneOrange text-cerreneOrange font-satoshi flex items-center justify-center lg:h-[60px] lg:w-[197px]"
-      >
+      <Link href="/testimonials" className="orangeBorderButton ">
         See More
       </Link>
     </section>

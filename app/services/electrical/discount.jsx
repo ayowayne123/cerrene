@@ -5,12 +5,12 @@ import tapDiscount from "@/public/images/tapDiscount.png";
 export default function Discount() {
   return (
     <section className="w-full py-24  container">
-      <div className="lg:h-[601px] lg:w-[1000px]  bg-cerreneDarkOrange  overflow-hidden mx-auto">
-        <div className=" flex h-full rounded-2xl flex-shrink-0  flex-col items-center justify-center bg-cerrene gap-12 ">
-          <div className="font-medium self-center italic text-cerreneYellow lg:text-[48px] text-[32px] text-center leading-[130%] lg:w-[643px]  ">
+      <div className="slg:h-[601px] md:h-[550px] h-[473px] rounded-[20px] lg:w-[1000px] w-full bg-cerreneDarkOrange  overflow-hidden mx-auto">
+        <div className=" flex h-full rounded-2xl flex-shrink-0  flex-col items-center justify-center bg-cerrene gap-6 slg:gap-12 ">
+          <div className="font-medium self-center italic text-cerreneYellow slg:text-[48px] text-[30px] md:text-[32px] text-center leading-[130%] slg:w-[643px]  ">
             Get 15% off your first appointment with Cerrene!
           </div>
-          <div className="font-satoshi self-center italic text-cerreneYellow text-[32px] text-center leading-[130%] lg:w-[678px]  ">
+          <div className="font-satoshi self-center italic text-cerreneYellow md:text-[26px] slg:text-[32px] text-center leading-[130%] slg:w-[678px] md:w-[500px] w-[310px] ">
             Trust Cerrene&apos;s expert electricians to handle all your
             electrical needs with precision and care.
           </div>
@@ -18,10 +18,7 @@ export default function Discount() {
             <Link href="/" className="orangeSolidButton">
               Contact Us
             </Link>
-            <Link
-              href="/contact"
-              className="h-[60px] font-satoshi font-bold text-cerreneOrange  w-[277px] border border-cerreneOrange flex items-center justify-center rounded"
-            >
+            <Link href="/contact" className="orangeBorderButtonBig">
               Get Hired
             </Link>
           </div>

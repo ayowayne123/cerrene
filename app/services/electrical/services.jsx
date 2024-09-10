@@ -5,16 +5,20 @@ import plugIconServices from "@/public/icons/plugIconServices.svg";
 
 const Imagecard = ({ title, text, services }) => {
   return (
-    <div className=" grid grid-cols-2 ">
+    <div className=" grid md:grid-cols-2 slg:gap-6 gap-8 md:gap-3 ">
       <div className="flex flex-row gap-5">
-        <div className="bg-cerreneLightGreen lg:w-[13px] lg:h-[153px] rounded-xl flex-shrink-0 translate-y-[14px]"></div>
-        <div className="lg:w-[513px]">
-          <h3 className="font-medium lg:text-[40px] pb-6 m-0">{title}</h3>
-          <div className="lg:text-xl font-satoshi font-normal">{text}</div>
+        <div className="bg-cerreneLightGreen w-[10px] h-[160px] slg:w-[13px] slg:h-[153px] rounded-xl flex-shrink-0 translate-y-[14px] "></div>
+        <div className="lg:w-[513px] ">
+          <h3 className="font-medium slg:text-[36px] text-3xl lg:text-[40px] pb-6 m-0">
+            {title}
+          </h3>
+          <div className="slg:text-xl md:text-lg  font-satoshi font-normal">
+            {text}
+          </div>
         </div>
       </div>
       <div>
-        <div className="flex flex-col  lg:text-[28px] font-satoshi italic leading-[140%] gap-6 pb-12">
+        <div className="flex flex-col slg:text-xl md:text-base text-xl lg:text-[28px] font-satoshi italic leading-[140%] gap-6 pb-12">
           {services.map((indi, index) => (
             <div className="flex items-center font-normal gap-5" key={index}>
               <i className="relative size-7 ">

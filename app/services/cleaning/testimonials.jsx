@@ -24,10 +24,7 @@ function Testimonials() {
           src={testimonials2}
         />
       </div>
-      <Link
-        href="/testimonials"
-        className="mt-10 border border-cerreneOrange text-cerreneOrange font-satoshi flex items-center justify-center slg:h-[60px] slg:w-[197px] h-[48px] w-[160px] "
-      >
+      <Link href="/testimonials" className="orangeBorderButton ">
         See More
       </Link>
     </section>
