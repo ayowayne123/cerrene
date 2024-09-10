@@ -12,14 +12,14 @@ const Imagecard = ({ src, title, text }) => {
   return (
     <div className="relative flex flex-col justify-between items-center md:items-start  ">
       <div>
-        <div className="lg:h-[355px] h-[180px] md:h-[250pxw -full gap-6 rounded-2xl overflow-hidden relative">
+        <div className="lg:h-[355px] h-[250px] w-full gap-6 rounded-2xl overflow-hidden relative">
           <Image src={src} alt="" className="object-cover" fill />
         </div>
         <div className="pb-5 lg:pr-12 slg:pr-8 flex flex-col items-center md:items-start ">
           <h3 className="font-medium leading-[130%] capitalize lg:text-[40px] md:text-[30px] text-[20px] py-4">
             {title}
           </h3>
-          <p className="font-satoshi py-2 leading-[140%] lg:text-[20px] text-[12px] text-center md:text-left md:text-[18px] md:w-full w-[280px] ">
+          <p className="font-satoshi py-2 leading-[140%] lg:text-[20px] text-[16px] text-center md:text-left md:text-[18px] md:w-full w-[320px] ">
             {text}
           </p>
         </div>
