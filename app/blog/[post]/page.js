@@ -7,7 +7,7 @@ export default async function Page({ params }) {
   const post = await getPost(slug);
   console.log(post.body);
   return (
-    <div className="pt-[94px] container ">
+    <div className="top-gutter container ">
       My Post: {params.post}
       <p>Author is {post.author.name}</p>
       <Image

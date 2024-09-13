@@ -34,7 +34,8 @@
 
   width: 300px;
   aspect-ratio: 1 / cos(30deg);
-  mask: conic-gradient(
+  mask:
+    conic-gradient(
         from -30deg at 50% calc(200% - 3 * var(--r) / 2),
         #000 60deg,
         #0000 0
@@ -44,4 +45,8 @@
     radial-gradient(var(--r), #000 98%, #0000 101%) space no-repeat 0 100% /
       calc(2 * tan(60deg) * var(--r)) calc(2 * var(--r));
   clip-path: polygon(0 0, 50% 100%, 100% 0);
+}
+
+.top-gutter {
+  @apply slg:h-[94px] h-[60px] md:h-[80px]  w-full inset-0 z-10;
 }

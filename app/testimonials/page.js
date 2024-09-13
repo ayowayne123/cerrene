@@ -7,9 +7,10 @@ export const metadata = {
 };
 function Testimonials() {
   return (
-    <main>
+    <main className="z-10 overflow-hidden">
       <Hero />
-      <Testimonial/>
+
+      <Testimonial />
     </main>
   );
 }
