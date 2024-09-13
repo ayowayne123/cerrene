@@ -38,7 +38,13 @@ export default function Who() {
         {/* First Line of Images */}
         <div className="md:flex gap-7 justify-between mt-12 hidden">
           {images.slice(0, 3).map((image, index) => (
-            <div key={index}>
+            <div
+              key={index}
+              data-aos="fade-left"
+              data-aos-once="true"
+              data-aos-easing="ease-in"
+              data-aos-delay={`${index * 150}`}
+            >
               <Image
                 src={image.src}
                 alt={`Who we are image ${index + 1}`}
@@ -53,7 +59,13 @@ export default function Who() {
         {/* Second Line of Images */}
         <div className="hidden md:flex gap-7 justify-between my-7">
           {images.slice(3).map((image, index) => (
-            <div key={index}>
+            <div
+              key={index}
+              data-aos="fade-left"
+              data-aos-once="true"
+              data-aos-easing="ease-in"
+              data-aos-delay={`${index * 150}`}
+            >
               <Image
                 src={image.src}
                 alt={`Who we are image ${index + 4}`}

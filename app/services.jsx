@@ -10,13 +10,19 @@ import Link from "next/link";
 const Service = ({ type, src, heading, paragraph1, paragraph2, href }) => {
   return (
     <div
+      data-aos-once="true"
       className={`grid  md:gap-6 xl:gap-10 ${
         type == "reverse"
           ? "lg:grid-cols-reverse slg:grid-cols-reverseSmall md:grid-cols-reverseMd"
           : "lg:grid-cols-services slg:grid-cols-servicesSmall md:grid-cols-servicesMd"
       } `}
     >
-      <div className="relative md:w-full lg:h-[612px] md:h-[450px] slg:h-[500px] w-[311px] h-60 ">
+      <div
+        className="relative md:w-full lg:h-[612px] md:h-[450px] slg:h-[500px] w-[311px] h-60 "
+        data-aos="fade-left"
+        data-aos-easing="ease-in"
+        data-aos-once="true"
+      >
         <Image src={src} alt="" className="object-cover" fill />
       </div>
       <div
@@ -24,17 +30,35 @@ const Service = ({ type, src, heading, paragraph1, paragraph2, href }) => {
           type == "reverse" ? "md:order-first" : ""
         } `}
       >
-        <h1 className="lg:text-[48px] text-[32px] font-medium leading-[130%] mb-6 lg:mb-11">
+        <h1
+          className="lg:text-[48px] text-[32px] font-medium leading-[130%] mb-6 lg:mb-11"
+          data-aos="fade-left"
+          data-aos-once="true"
+          data-aos-easing="ease-in"
+        >
           {" "}
           {heading}
         </h1>
-        <p className="font-satoshi text-sm md:text-base slg:text-lg lg:text-xl  mb-4">
+        <p
+          className="font-satoshi text-sm md:text-base slg:text-lg lg:text-xl  mb-4"
+          data-aos="fade-left"
+          data-aos-once="true"
+          data-aos-easing="ease-in"
+        >
           {paragraph1}
         </p>
-        <p className="font-satoshi text-sm md:text-base slg:text-lg lg:text-xl lg:mt-4">
+        <p
+          className="font-satoshi text-sm md:text-base slg:text-lg lg:text-xl lg:mt-4"
+          data-aos="fade-left"
+          data-aos-once="true"
+          data-aos-easing="ease-in"
+        >
           {paragraph2}
         </p>
         <Link
+          data-aos="fade-left"
+          data-aos-once="true"
+          data-aos-easing="ease-in"
           href={href}
           className="mt-10 border border-cerreneOrange text-cerreneOrange font-satoshi flex items-center justify-center slg:h-[60px] slg:w-[197px] h-[48px] w-[160px] "
         >
@@ -49,7 +73,12 @@ const Testimonials = ({ name, occupation, src, testimony }) => {
   return (
     <div className="grid slg:grid-cols-2 gap-10 lg:px-20 w-full">
       <div className="w-full slg:max-w-[600px] relative">
-        <div className="w-full h-[464px] relative">
+        <div
+          className="w-full h-[464px] relative"
+          data-aos="fade-up"
+          data-aos-once="true"
+          data-aos-easing="ease-in"
+        >
           <Image
             src={src}
             alt="photo of testimony giver"
@@ -57,10 +86,29 @@ const Testimonials = ({ name, occupation, src, testimony }) => {
             fill
           />
         </div>
-        <h2 className="font-medium slg:py-4 text-[32px] text-center">{name}</h2>
-        <p className="font-satoshi  text-xl text-center">{occupation}</p>
+        <h2
+          data-aos="fade-down"
+          data-aos-once="true"
+          data-aos-easing="ease-in"
+          className="font-medium slg:py-4 text-[32px] text-center"
+        >
+          {name}
+        </h2>
+        <p
+          data-aos="fade-down"
+          data-aos-once="true"
+          data-aos-easing="ease-in"
+          className="font-satoshi  text-xl text-center"
+        >
+          {occupation}
+        </p>
       </div>
-      <div className="flex flex-col justify-start gap-16">
+      <div
+        className="flex flex-col justify-start gap-16"
+        data-aos="fade-left"
+        data-aos-once="true"
+        data-aos-easing="ease-in"
+      >
         <div className="lg:text-[32px] slg:text-[28px] leading-[140%] md:text-[22px] relative w-full">
           {" "}
           <span className="font-satoshi">{testimony}</span>
