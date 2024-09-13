@@ -53,8 +53,28 @@ const satoshi = localFont({
 });
 
 export const metadata = {
+  metadataBase: new URL("https://cerrene.vercel.app"),
   title: "CERRENE",
   description: "Clean meats Repairs",
+  openGraph: {
+    title: "CERRENE",
+    description: "Clean meats Repairs | CERRENE",
+    url: "https://pecbico.cacsa.org",
+    siteName: "Cerrene",
+    locale: "en-US",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 export default function RootLayout({ children }) {
