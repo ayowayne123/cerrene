@@ -6,10 +6,16 @@ const DiscoverSingle = ({ color, number, title, text }) => {
       </div>
       <div className="text-white grid md:grid-cols-5 items-end  h-full gap-4 px-6 py-6 md:px-0 md:py-0">
         <div className="slg:col-start-4 md:col-start-3 flex flex-col md:py-12 slg:w-[404px] md:w-[400px] md:col-span-3 ">
-          <h2 className="font-medium slg:text-[48px] md:text-[40px] text-[36px]">
+          <h2
+            data-aos="flip-up"
+            data-aos-once="true"
+            className="font-medium slg:text-[48px] md:text-[40px] text-[36px]"
+          >
             {title}
           </h2>
-          <p>{text}</p>
+          <p data-aos="zoom-in-down" data-aos-delay="300" data-aos-once="true">
+            {text}
+          </p>
         </div>
       </div>
     </div>
@@ -40,7 +46,11 @@ const discoverData = [
 export default function Discover() {
   return (
     <section className="w-full  text-[#4e4e4e] relative overflow-hidden">
-      <div className="leading-[110%] pt-24 pb-8 font-medium text-[36px] xl:text-[56px] lg:text-[48px] container">
+      <div
+        data-aos="fade-right"
+        data-aos-once="true"
+        className="leading-[110%] pt-24 pb-8 font-medium text-[36px] xl:text-[56px] lg:text-[48px] container"
+      >
         Discover How We Work
       </div>
       <div className="  flex flex-col">

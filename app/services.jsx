@@ -56,9 +56,9 @@ const Service = ({ type, src, heading, paragraph1, paragraph2, href }) => {
           {paragraph2}
         </p>
         <Link
-          data-aos="fade-left"
+          data-aos="flip-up"
           data-aos-once="true"
-          data-aos-easing="ease-in"
+          data-aos-delay="300"
           href={href}
           className="mt-10 border border-cerreneOrange text-cerreneOrange font-satoshi flex items-center justify-center slg:h-[60px] slg:w-[197px] h-[48px] w-[160px] "
         >
@@ -211,7 +211,7 @@ export default function Services() {
         don&apos;t just take our word for it—hear from our satisfied clients
         themselves.
       </span>
-      <div className="lg:gap-16  gap-6 slg:gap-8 flex flex-col shrink-0 w-full overflow-x-scroll pb-4">
+      <div className="lg:gap-16  gap-6 slg:gap-8 flex flex-col shrink-0 w-full  pb-4">
         {testimonialData.map((card, index) => (
           <Testimonials
             type={card.type}
