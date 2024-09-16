@@ -59,7 +59,7 @@ export const metadata = {
   openGraph: {
     title: "CERRENE",
     description: "Clean meats Repairs | CERRENE",
-    url: "https://pecbico.cacsa.org",
+    url: "https://cerrene.vercel.app",
     siteName: "Cerrene",
     locale: "en-US",
     type: "website",

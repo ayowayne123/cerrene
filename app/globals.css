@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  transition: all 0.3s ease-in-out;
+}
+
 .gradientBall {
   @apply bg-gradient-to-r from-[#33340E] from-5% via-[#4C4D16] via-65% to-[#B1B333] to-100%  overflow-hidden rounded-full absolute;
 }
