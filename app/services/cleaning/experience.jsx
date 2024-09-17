@@ -6,7 +6,7 @@ import Dots from "@/public/utils/dots";
 export default function Experience() {
   return (
     <section className="">
-      <div className="bg-cerreneOffWhite  slg:h-[94px] h-[60px] md:h-[80px]  w-full inset-0 z-10"></div>
+      <div className="bg-cerreneOffWhite  top-gutter"></div>
       <div
         className="mx-auto leading-[120%] relative text-center slg:text-[72px] text-[27px] w-[260px] md:text-[56px] pt-[72px]
        slg:pt-20 xl:pt-[91px] font-medium slg:w-[677px] md:w-[530px] text-cerreneGreen mb-6 md:mb-2"
@@ -32,7 +32,8 @@ export default function Experience() {
       </div>
       <Link
         href="/contact"
-        className="h-[60px] mx-auto mb-9 mt-12 z-20 font-satoshi font-bold text-white  w-[277px] bg-cerreneOrange md:hidden flex items-center justify-center rounded"
+        className="h-[60px] mx-auto mb-9 mt-12 z-20 font-satoshi font-bold text-white  
+        w-[277px] bg-cerreneOrange md:hidden flex items-center justify-center rounded"
       >
         Contact Us
       </Link>

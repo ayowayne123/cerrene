@@ -34,3 +34,13 @@ export async function getPost(slug) {
     { slug }
   );
 }
+
+export async function getCategoryNames() {
+  return client.fetch(
+    groq`*[_type == "category"]{
+  title,
+    _id,
+    slug.current,
+}`
+  );
+}
