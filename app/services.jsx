@@ -2,7 +2,7 @@ import Image from "next/image";
 import cleanliness from "@/public/images/cleanliness.png";
 import plumbing from "@/public/images/plumbing.png";
 import electrical from "@/public/images/electrical.png";
-import yinka from "@/public/images/yinka.png";
+import yinka from "@/public/images/yinka.jpg";
 import tayo from "@/public/images/tayo.png";
 import quote from "@/public/images/quote.png";
 import Link from "next/link";
@@ -82,7 +82,7 @@ const Testimonials = ({ name, occupation, src, testimony }) => {
           <Image
             src={src}
             alt="photo of testimony giver"
-            className="object-cover"
+            className="object-cover object-top"
             fill
           />
         </div>

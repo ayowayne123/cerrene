@@ -53,8 +53,28 @@ const satoshi = localFont({
 });
 
 export const metadata = {
+  metadataBase: new URL("https://cerrene.com"),
   title: "CERRENE",
   description: "Clean meats Repairs",
+  openGraph: {
+    title: "CERRENE",
+    description: "Clean meats Repairs | CERRENE",
+    url: "https://cerrene.com",
+    siteName: "Cerrene",
+    locale: "en-US",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -62,7 +82,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${satoshi.variable} ${literata.className}`}>
         <Header />
-        {children}
+       <div>{children}</div> 
         <Footer />
       </body>
     </html>

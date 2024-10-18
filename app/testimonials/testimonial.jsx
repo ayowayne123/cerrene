@@ -65,25 +65,25 @@ const testimonials = [
 
 function Testimonial() {
   return (
-    <section className="lg:pt-[360px] relative overflow-hidden">
-      <div className="absolute bg-cerreneLightGreen rounded-full w-[200px] h-[200px] -left-[52px] top-[243px] blur-[50px] ">
+    <section className="lg:pt-[360px] slg:pt-[300px] md:pt-[200px] pt-[100px] relative overflow-hidden -z-10">
+      <div className="absolute bg-cerreneLightGreen rounded-full w-[120px] h-[120px] slg:w-[170px] slg:h-[170px] lg:w-[200px] lg:h-[200px] slg:-left-[52px] md:-left-[25px] md:top-[100px] slg:top-[150px] lg:top-[243px] blur-[50px] ">
         {" "}
       </div>
-      <div className="absolute bg-cerreneYellow rounded-full w-[200px] h-[200px] -left-[81px] top-[354px] blur-[90px] ">
+      <div className="absolute bg-cerreneYellow rounded-full w-[120px] h-[120px] slg:w-[170px] slg:h-[170px] lg:w-[200px] lg:h-[200px] -left-[81px] md:-left-[45px] md:top-[180px] slg:top-[250px] lg:top-[354px] blur-[90px] ">
         {" "}
       </div>
-      <div className="absolute bg-cerreneLightGreen rounded-full w-[200px] h-[200px] -right-[52px] bottom-[43px] blur-[50px] ">
+      <div className="absolute bg-cerreneLightGreen rounded-full w-[120px] h-[120px] slg:w-[170px] slg:h-[170px] lg:w-[200px] lg:h-[200px] -right-[52px] bottom-[43px] blur-[50px] ">
         {" "}
       </div>
-      <div className="absolute bg-cerreneYellow rounded-full w-[200px] h-[200px] -right-[81px] bottom-[154px] blur-[90px] ">
+      <div className="absolute bg-cerreneYellow rounded-full w-[120px] h-[120px] slg:w-[170px] slg:h-[170px] lg:w-[200px] lg:h-[200px] -right-[81px] bottom-[154px] blur-[90px] ">
         {" "}
       </div>
       <div className="">
-        <h1 className="font-semibold leading-[130%] text-cerreneGreen lg:text-[56px] mx-auto text-center lg:w-[686px]">
+        <h1 className="font-semibold leading-[130%] text-cerreneGreen md:text-[40px] slg:w-[500px] md:w-[500px] lg:text-[56px] mx-auto text-center lg:w-[686px] pb-3">
           Happy <span className="font-semibold italic">Experiences</span> Await
           You With Cerrene.
         </h1>
-        <div className="lg:py-16 flex flex-col h-[1300px]  flex-wrap content-center justify-start gap-x-4 gap-y-10 ">
+        <div className="xl:py-16 slg:py-10 md:py-6  flex flex-col slg:h-[1750px] lg:h-[1300px] md:h-[1500px] flex-wrap content-center justify-start gap-x-4 gap-y-6 slg:gap-y-10 ">
           {testimonials.map((testimonial, index) => (
             <Quote
               key={index}

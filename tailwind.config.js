@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 const plugin = require("tailwindcss/plugin");
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -40,6 +41,12 @@ module.exports = {
         services: " minmax(750px, 1fr) 450px",
         servicesSmall: " minmax(550px, 1fr) 360px",
         servicesMd: " minmax(330px, 1fr) 300px",
+        videos: " 680px minmax(400px, 1fr) ",
+        videosSmall: " 500px minmax(380px, 1fr)",
+        videosMd: " 380px minmax(280px, 1fr)",
+        videosReverse: " minmax(400px, 1fr)  680px ",
+        videosReverseSmall: "minmax(380px, 1fr) 500px ",
+        videosReverseMd: "minmax(280px, 1fr) 380px ",
       },
       gridTemplateRows: {
         vertical: "364px 223px 364px",
