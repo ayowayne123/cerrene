@@ -4,6 +4,7 @@ import Header from "./header";
 import localFont from "next/font/local";
 import Footer from "./footer";
 import "./animations.css";
+import logo from "@/public/images/logoDark.png"
 
 const literata = Literata({
   subsets: ["greek"],
@@ -52,18 +53,32 @@ const satoshi = localFont({
   variable: "--font-satoshi",
 });
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+  themeColor: "#DE4B99", // Adjust as needed for Cerrene's color theme
+};
+
 export const metadata = {
-  metadataBase: new URL("https://cerrene.com"),
-  title: "CERRENE",
-  description: "Clean meats Repairs",
+
+  title: "CERRENE | Clean Meets Repair",
+  description: "CERRENE offers high-quality cleaning and repair services, combining reliability and expertise to keep your home and business spotless and functional.",
+  keywords: "Cerrene, cleaning services, repair services, home repairs, business cleaning, facility management, professional cleaning, plumbing services, electrical services",
+  author: "Ayomide Ogu | Bard Design Agency", // Replace with the actual author
   openGraph: {
-    title: "CERRENE",
-    description: "Clean meats Repairs | CERRENE",
+    title: "CERRENE | Clean Meets Repair",
+    description: "CERRENE provides top-notch cleaning and repair services to ensure your home and business environments are well-maintained.",
     url: "https://cerrene.com",
-    siteName: "Cerrene",
+    siteName: "CERRENE",
     locale: "en-US",
     type: "website",
+    image: "/path-to-logo.png", // Update with a path to your logo or image
   },
+  canonicalUrl: "https://cerrene.com",
+  type: "website",
+  charset: "UTF-8",
   robots: {
     index: true,
     follow: true,
@@ -75,7 +90,25 @@ export const metadata = {
       "max-snippet": -1,
     },
   },
+  verification: {
+    google: "your-google-site-verification-code", // Replace with your Google verification code
+  },
+  googleSiteVerification: "your-google-site-verification-code", // Replace this with your actual Google Search Console verification code
+  bingSiteVerification: "your-bing-verification-code", // Replace this with your Bing verification code
+  structuredData: {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "CERRENE",
+    url: "https://cerrene.com",
+    logo: logo, // Update with your logo path
+    description: "CERRENE offers professional cleaning and repair services to ensure your home and business environments are maintained with care.",
+    sameAs: [
+      "https://www.linkedin.com/company/cerrene", // Update with your social media URLs
+      "https://www.instagram.com/cerreneservices/",
+    ],
+  },
 };
+
 
 export default function RootLayout({ children }) {
   return (

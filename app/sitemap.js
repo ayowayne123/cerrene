@@ -1,35 +1,35 @@
 export default function sitemap() {
   return [
     {
-      url: "https://cerrene.vercel.app",
+      url: "https://cerrene.com",
       lastModified: new Date().toISOString().split("T")[0],
     },
     {
-      url: "https://cerrene.vercel.app/about",
+      url: "https://cerrene.com/about",
       lastModified: new Date().toISOString().split("T")[0],
     },
     {
-      url: "https://cerrene.vercel.app/contact",
+      url: "https://cerrene.com/contact",
       lastModified: new Date().toISOString().split("T")[0],
     },
     {
-      url: "https://cerrene.vercel.app/services/plumbing",
+      url: "https://cerrene.com/services/plumbing",
       lastModified: new Date().toISOString().split("T")[0],
     },
     {
-      url: "https://cerrene.vercel.app/services/cleaning",
+      url: "https://cerrene.com/services/cleaning",
       lastModified: new Date().toISOString().split("T")[0],
     },
     {
-      url: "https://cerrene.vercel.app/services/electrical",
+      url: "https://cerrene.com/services/electrical",
       lastModified: new Date().toISOString().split("T")[0],
     },
     {
-      url: "https://cerrene.vercel.app/testimonails",
+      url: "https://cerrene.com/testimonails",
       lastModified: new Date().toISOString().split("T")[0],
     },
     {
-      url: "https://cerrene.vercel.app/faqs",
+      url: "https://cerrene.com/faqs",
       lastModified: new Date().toISOString().split("T")[0],
     },
   ];

@@ -56,7 +56,7 @@ export default function Who() {
         </div>
 
         {/* Second Line of Images */}
-        <div className="hidden md:flex gap-1 justify-between my-7">
+        <div className="hidden md:flex gap-1 justify-between my-1">
           {images.slice(3).map((image, index) => (
             <div key={index} className={`relative h-[300px] ${image.width}`} >
               <Image

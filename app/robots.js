@@ -5,6 +5,6 @@ export default function robots() {
       allow: "/",
       disallow: "/private/",
     },
-    sitemap: "https://cerrene.vercel.app/sitemap.xml",
+    sitemap: "https://cerrene.com/sitemap.xml",
   };
 }
