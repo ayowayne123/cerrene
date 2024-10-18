@@ -29,7 +29,12 @@ export default function Who() {
         <Image src={spiral} alt="" fill className="object-cover" />
       </div>
       <div className="container z-10 absolute lg:top-8 lg:left-0 lg:right-0">
-        <div className="lg:w-[918px] slg:w-[850px] md:w-[600px] text-[#4e4e4e] text-[18px] font-satoshi font-medium md:text-[28px] lg:text-[40px] slg:text-[34px] lg:pb-3">
+        <div
+          data-aos="fade-left"
+          data-aos-once="true"
+          data-aos-easing="ease"
+          className="lg:w-[918px] slg:w-[850px] md:w-[600px] text-[#4e4e4e] text-[18px] font-satoshi font-medium md:text-[28px] lg:text-[40px] slg:text-[34px] lg:pb-3"
+        >
           While you sit back and unwind, our expert team handles every aspect
           with precision and care. From scrubbing away grime to fixing faulty
           wiring or leaky pipes, we&apos;ve got you covered.
@@ -78,7 +83,13 @@ export default function Who() {
             </div>
           ))}
         </div>
-        <Link href="/" className="orangeSolidButton">
+        <Link
+          data-aos="flip-up"
+          data-aos-once="true"
+          data-aos-delay="300"
+          href="/"
+          className="orangeSolidButton"
+        >
           Contact Us
         </Link>
       </div>

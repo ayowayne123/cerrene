@@ -24,7 +24,7 @@ export default function Discount() {
           </div>
 
           {/* Right Section: Image */}
-          <div className="md:relative absolute -top-56 md:top-0 md:bottom-0 left-0 right-0">
+          <div className="md:relative absolute -top-56 md:top-0 md:bottom-0 left-0 right-0 animate-spin-slow">
             <Image
               src={circles}
               alt="Circles illustration"

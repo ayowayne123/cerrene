@@ -16,6 +16,9 @@ export default function Photos() {
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             alt={`Image ${index + 1}`}
             className="w-full h-full object-cover"
+            data-aos="flip-up"
+            data-aos-once="true"
+            data-aos-delay={`${index * 150}`}
           />
         </div>
       ))}
