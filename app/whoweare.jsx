@@ -11,12 +11,12 @@ import Button from "@/public/utils/button";
 
 export default function Who() {
   const images = [
-    { src: whoweare1, height: 300, width: 526 },
-    { src: whoweare2, height: 300, width: 422 },
-    { src: whoweare3, height: 300, width: 316 },
-    { src: whoweare4, height: 300, width: 316 },
-    { src: whoweare5, height: 300, width: 422 },
-    { src: whoweare6, height: 300, width: 526 },
+    { src: whoweare1, height: 300, width: 'w-5/12' },
+    { src: whoweare2, height: 300, width: 'w-4/12'  },
+    { src: whoweare3, height: 300, width: 'w-3/12' },
+    { src: whoweare4, height: 300,  width: 'w-3/12'},
+    { src: whoweare5, height: 300, width: 'w-4/12' },
+    { src: whoweare6, height: 300, width: 'w-5/12'},
   ];
   const imagesPhones = [
     { src: whoweare1, height: 300, width: 526 },
@@ -36,14 +36,14 @@ export default function Who() {
         </div>
 
         {/* First Line of Images */}
-        <div className="md:flex gap-7 justify-between mt-12 hidden">
+        <div className="md:flex gap-1 justify-between mt-12 hidden">
           {images.slice(0, 3).map((image, index) => (
-            <div key={index}>
+            <div key={index} className={`relative h-[300px] ${image.width}`} >
               <Image
                 src={image.src}
                 alt={`Who we are image ${index + 1}`}
-                width={image.width}
-                height={image.height}
+  
+                fill
                 className="object-cover"
               />
             </div>
@@ -51,14 +51,13 @@ export default function Who() {
         </div>
 
         {/* Second Line of Images */}
-        <div className="hidden md:flex gap-7 justify-between my-7">
+        <div className="hidden md:flex gap-1 justify-between my-7">
           {images.slice(3).map((image, index) => (
-            <div key={index}>
+            <div key={index} className={`relative h-[300px] ${image.width}`} >
               <Image
                 src={image.src}
                 alt={`Who we are image ${index + 4}`}
-                width={image.width}
-                height={image.height}
+               fill
                 className="object-cover"
               />
             </div>
@@ -66,7 +65,7 @@ export default function Who() {
         </div>
 
         {/* Phone Line of images */}
-        <div className="flex flex-col gap-7 justify-between my-12 md:hidden">
+        <div className="flex flex-col gap-1 justify-between my-12 md:hidden">
           {imagesPhones.slice(0, 3).map((image, index) => (
             <div key={index}>
               <Image

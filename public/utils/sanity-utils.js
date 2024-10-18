@@ -10,8 +10,9 @@ export async function getPosts() {
       title,
       "slug": slug.current,
       "categories": categories[]->title,
-      body,
       description,
+      body,
+      
       "author": author->{name, image},
       "mainImage": mainImage.asset->url
     }`
@@ -26,8 +27,9 @@ export async function getPost(slug) {
       publishedAt,
       title,
       "categories": categories[]->title,
-      body,
       description,
+      body,
+      
       "author": author->{name, image},
       "mainImage": mainImage.asset->url
     }`,

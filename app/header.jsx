@@ -7,6 +7,7 @@ import logoLight from "@/public/images/logoLight.png";
 import doodle from "@/public/icons/doodle.svg"; // Import the doodle image
 import { usePathname } from "next/navigation";
 import { FaTimes } from "react-icons/fa";
+import { FaAngleDown } from "react-icons/fa6";
 import { LiaTimesSolid } from "react-icons/lia";
 import { AiOutlineMenu, AiOutlineDown } from "react-icons/ai"; // Import the down arrow icon
 
@@ -89,11 +90,11 @@ function Header() {
               onMouseLeave={() => setIsServicesOpen(false)}
             >
               <div
-                className={`relative z-10 ${
+                className={`relative z-10 flex gap-1 items-center justify-center ${
                   pathname.includes("/services") ? "font-bold capitalize" : ""
                 }`}
               >
-                services
+                services <FaAngleDown />
                 {pathname.includes("/services") && (
                   <Image
                     src={doodle}

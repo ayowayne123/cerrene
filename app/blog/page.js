@@ -1,6 +1,7 @@
 import { getPosts } from "@/public/utils/sanity-utils";
 import Hero from "./hero";
 import Category from "./categoryBar";
+import BlogGrid from "./blogGrid";
 
 async function Page() {
   const posts = await getPosts();
@@ -10,6 +11,7 @@ async function Page() {
     <main className="overflow-hidden">
       <Hero />
       <Category />
+      <BlogGrid/>
     </main>
   );
 }

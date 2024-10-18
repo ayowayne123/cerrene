@@ -2,7 +2,7 @@ import Image from "next/image";
 import cleanliness from "@/public/images/cleanliness.png";
 import plumbing from "@/public/images/plumbing.png";
 import electrical from "@/public/images/electrical.png";
-import yinka from "@/public/images/yinka.png";
+import yinka from "@/public/images/yinka.jpg";
 import tayo from "@/public/images/tayo.png";
 import quote from "@/public/images/quote.png";
 import Link from "next/link";
@@ -17,7 +17,7 @@ const Service = ({ type, src, heading, paragraph1, paragraph2, href }) => {
       } `}
     >
       <div className="relative md:w-full lg:h-[612px] md:h-[450px] slg:h-[500px] w-[311px] h-60 ">
-        <Image src={src} alt="" className="object-cover" fill />
+        <Image src={src} alt="" className="object-cover " fill />
       </div>
       <div
         className={`flex flex-col justify-center ${
@@ -53,7 +53,7 @@ const Testimonials = ({ name, occupation, src, testimony }) => {
           <Image
             src={src}
             alt="photo of testimony giver"
-            className="object-cover"
+            className="object-cover object-top"
             fill
           />
         </div>
