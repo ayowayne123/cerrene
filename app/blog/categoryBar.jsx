@@ -43,9 +43,10 @@ const categoryNames = [
 export default function Category() {
   return (
     <div className="slg:h-[94px] h-[60px] md:h-[80px]  w-full bg-cerreneYellow text-[#4e4e4e]">
-      <div className="flex flex-row overflow-x-scroll no-scrollbar items-center justify-start md:gap-5 slg:gap-8 lg:gap-12 h-full container ">
+      <div className="flex flex-row overflow-x-scroll no-scrollbar items-center justify-start gap-3 md:gap-5 slg:gap-8 lg:gap-12 h-full container ">
         {categoryNames.map((item) => (
-          <CategoryItem category={item} key={item._id} />
+          <div className="w-max shrink-0" key={item._id}><CategoryItem category={item}  /></div>
+          
         ))}
       </div>
     </div>
