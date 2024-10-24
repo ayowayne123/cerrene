@@ -76,6 +76,7 @@ export const metadata = {
     type: "website",
     image: "/path-to-logo.png", // Update with a path to your logo or image
   },
+
   canonicalUrl: "https://cerrene.com",
   type: "website",
   charset: "UTF-8",
@@ -91,9 +92,9 @@ export const metadata = {
     },
   },
   verification: {
-    google: "your-google-site-verification-code", // Replace with your Google verification code
+    google: "_oFKdqCJVp-svhJ2vW47uQbswYIYWc0eKX1oN5oTBw0", // Replace with your Google verification code
   },
-  googleSiteVerification: "your-google-site-verification-code", // Replace this with your actual Google Search Console verification code
+  googleSiteVerification: "_oFKdqCJVp-svhJ2vW47uQbswYIYWc0eKX1oN5oTBw0", // Replace this with your actual Google Search Console verification code
   bingSiteVerification: "your-bing-verification-code", // Replace this with your Bing verification code
   structuredData: {
     "@context": "https://schema.org",
