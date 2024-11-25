@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Discount() {
   return (
-    <section className="w-full slg:min-h-[381px] bg-aboutBg2">
+    <section className="w-full slg:h-[381px] bg-aboutBg2">
       <div className="relative bg-[#F0712766] h-full w-full flex flex-col items-center slg:py-12 py-10">
         <div
           className="mx-auto pt-2 font-bold text-white text-center

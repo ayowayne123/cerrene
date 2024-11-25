@@ -2,7 +2,9 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Dots from "@/public/utils/dots";
+import faqsImage from "@/public/images/faqs.svg"
+import { FaWhatsapp , FaInstagram,FaRegEnvelope} from "react-icons/fa";
+import { FiPhoneCall } from "react-icons/fi";
 
 export default function Faqs() {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -76,7 +78,7 @@ export default function Faqs() {
   ];
 
   return (
-    <section className="bg-white">
+    <section className="bg-white pb-24">
        <div className="bg-cerreneYellow top-gutter"></div>
       <div className="lg:h-[730px] bg-cerreneYellow rounded-b-[450px] overflow-hidden flex items-center  flex-col justify-center lg:gap-[72px]">
         <h1 className="font-medium text-cerreneGreen slg:text-[72px] text-[36px]">
@@ -88,13 +90,13 @@ export default function Faqs() {
           feel free to contact us directly. We're here to help!
         </p>
       </div>
-      <div className="mt-12 container text-[#4e4e4e]">
-        <h2 className="text-cerreneGreen text-[56px] font-semibold mb-6">FAQs</h2>
+      <div className="container text-[#4e4e4e]">
+        <h2 className="text-cerreneGreen text-[56px] font-semibold py-10 border-b border-[#4C4D1680]">FAQs</h2>
         <div>
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="border-b border-gray-300 py-4 cursor-pointer flex justify-between items-start"
+              className="border-b border-[#4C4D1680] py-10 cursor-pointer flex justify-between items-start"
               onClick={() => toggleAccordion(index)}
             >
               <div className="flex space-x-[72px] ">
@@ -118,22 +120,35 @@ export default function Faqs() {
           ))}
         </div>
       </div>
-      <div className="mt-12 flex flex-col items-center">
-        <h2 className="text-cerreneGreen font-medium text-2xl mb-4">
+      <div className="flex flex-col items-center container h-full">
+        <div className="relative slg:h-[310px] slg:w-[615px] h-[200px] w-full  translate-y-5 z-10"> <Image src={faqsImage} alt="Image of faqs" className="object-fit" fill /></div>
+       
+       <div className="bg-cerreneLightGreen text-cerreneYellow flex flex-col items-center justify-between slg:pt-16 slg:pb-28  w-full slg:h-[430px] h-96 z-20 rounded-[20px]">
+       <h2 className="font-medium text-2xl slg:text-[40px] mb-4">
           Got More Questions For Us?
         </h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          <Link href="https://wa.me/YOUR_PHONE_NUMBER" target="_blank" className="text-cerreneGreen">
-            Chat with Us
+        <div className="grid grid-cols-2 md:flex flex-row items-center justify-center  slg:gap-[125px] text-center font-satoshi text-xl">
+          <Link href="https://wa.me/2347061686434" target="_blank" className="text-cerreneYellow flex flex-col gap-1 items-center justify-center">
+          <span className="text-center text-3xl"><FaWhatsapp/></span>
+          <span>Chat with Us</span>
+            
           </Link>
-          <a href="mailto:hello@cerrene.com" className="text-cerreneGreen">
+          <a href="mailto:hello@cerrene.com" className="text-cerreneYellow flex flex-col gap-1 items-center justify-center">
+            <span className="text-center text-3xl"><FaRegEnvelope/></span>
+            <span></span>
             hello@cerrene.com
           </a>
-          <p className="text-cerreneGreen">+234 901 2347 000</p>
-          <Link href="#" className="text-cerreneGreen">
+          <p className="text-cerreneYellow flex flex-col gap-1 items-center justify-center">
+            <span className="text-center text-3xl"><FiPhoneCall/></span>
+            <span></span>+234 901 2347 000</p>
+          <Link href="#" className="text-cerreneYellow flex flex-col gap-1 items-center justify-center">
+          <span className="text-center text-3xl"><FaInstagram/></span>
+          <span></span>
             Social Media
           </Link>
         </div>
+        </div>
+       
       </div>
     </section>
   );

@@ -4,9 +4,11 @@ import plumbingexpert from "@/public/images/plumbingexpert.png";
 import electricexpert from "@/public/images/electricexpert.png";
 import Link from "next/link";
 
-const Imagecard = ({ src, title, text, link }) => {
+const Imagecard = ({ src, title, text, link,index }) => {
   return (
-    <div className="relative   ">
+    <div className="relative   "  data-aos="flip-left"
+    data-aos-once="true"
+    data-aos-delay={`${index * 150}`}>
       <div className="lg:h-[355px] h-[280px] md:h-[455px] w-full gap-6 rounded-2xl overflow-hidden relative">
         <Image src={src} alt="" className="object-cover" fill />
       </div>
@@ -21,6 +23,9 @@ const Imagecard = ({ src, title, text, link }) => {
       <Link
         href={link}
         className="border border-cerreneOrange text-cerreneOrange font-satoshi px-10 py-2"
+        data-aos="flip-up"
+        data-aos-once="true"
+        data-aos-delay={`${index * 250}`}
       >
         Learn More
       </Link>
@@ -63,6 +68,8 @@ export default function Expertise() {
               text={card.text}
               link={card.link}
               key={index}
+              index={index}
+             
             />
           ))}
         </div>

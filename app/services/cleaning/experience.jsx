@@ -20,7 +20,9 @@ export default function Experience() {
           md:h-[84px] object-contain md:bottom-20 xl:bottom-[91px] md:-right-24 -right-9 bottom-6"
         />
       </div>
-      <Link href="/" className="orangeSolidButton mx-auto my-6">
+      <Link href="https://wa.me/2347061686434?text=I%20want%20to%20find%20out%20more%20about%20Cerrene"
+          target="_blank"
+           rel="noopener noreferrer" className="orangeSolidButton mx-auto my-6">
         Contact Us
       </Link>
       <div className="w-full md:h-[357px] h-[390px] relative  z-10 ">
@@ -31,7 +33,9 @@ export default function Experience() {
         </div>
       </div>
       <Link
-        href="/contact"
+        href="https://wa.me/2347061686434?text=I%20want%20to%20find%20out%20more%20about%20Cerrene"
+        target="_blank"
+         rel="noopener noreferrer"
         className="h-[60px] mx-auto mb-9 mt-12 z-20 font-satoshi font-bold text-white  
         w-[277px] bg-cerreneOrange md:hidden flex items-center justify-center rounded"
       >

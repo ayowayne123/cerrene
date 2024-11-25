@@ -15,7 +15,9 @@ export default function Discount() {
             spotless and inviting.
           </div>
           <div className="flex flex-col gap-4">
-            <Link href="/" className="orangeSolidButton">
+            <Link href="https://wa.me/2347061686434?text=I%20want%20to%20find%20out%20more%20about%20Cerrene"
+          target="_blank"
+           rel="noopener noreferrer" className="orangeSolidButton">
               Contact Us
             </Link>
             <Link
