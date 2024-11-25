@@ -18,7 +18,9 @@ export default function Discount() {
               Whether you need cleaning, electrical, or plumbing services, our
               expert team is ready to assist you.
             </div>
-            <Link href="/" className="orangeSolidButton">
+            <Link href="https://wa.me/2347061686434?text=I%20want%20to%20find%20out%20more%20about%20Cerrene"
+         target="_blank"
+          rel="noopener noreferrer" className="orangeSolidButton">
               Contact Us
             </Link>
           </div>

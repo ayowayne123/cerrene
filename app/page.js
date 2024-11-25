@@ -8,13 +8,10 @@ import Services from "./services";
 import Solution from "./solution";
 import Discover from "./discover";
 import Contact from "./contact";
-import AOS from "aos";
-import "aos/dist/aos.css";
+
 
 export default function Home() {
-  useEffect(() => {
-    AOS.init();
-  }, []);
+ 
   return (
     <main className="overflow-hidden">
       <Hero />

@@ -15,18 +15,18 @@ function Footer() {
     <div className='lg:grid-cols-3 grid text-white font-satoshi  font-medium w-full'>
     <div className='flex flex-col lg:text-xl'>
         <Link href='mailto:hello@cerrene.com'>hello@cerrene.com</Link>
-        <Link href='tel:+2349012347000'>+234 901 2347 000</Link>
-    </div>
+        <Link href='tel:+2347061686434'>+234 706 168 6434</Link>
+    </div> 
     <div className='flex lg:flex-row flex-col justify-between font-light capitalize '>
     <Link href='/about'>about</Link>
     <Link href='/services'>services</Link>
     <Link href='/blog'>blog</Link>
-    <Link href='/terms'>terms</Link>
+    <Link href='/faqs'>faqs</Link>
     </div>
-    <div className=' lg:p-20'>
+    {/* <div className=' lg:p-20'>
     <button className='animated-button text-cerreneOrange border-cerreneOrange px-6 py-2 capitalize border-2'> subscribe</button>
    
-    </div>
+    </div> */}
 
 </div>
         

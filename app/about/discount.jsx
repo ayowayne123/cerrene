@@ -13,7 +13,9 @@ export default function Discount() {
           Get 15% off your first appointment with Cerrene!
         </div>
         <Link
-          href="/contact"
+          href="https://wa.me/2347061686434?text=I%20want%20to%20find%20out%20more%20about%20Cerrene"
+          target="_blank"
+           rel="noopener noreferrer"
           className="h-[50px] md:h-[60px] mt-6 md:mt-8 font-satoshi font-bold text-white w-[220px] md:w-[277px] bg-cerreneOrange flex items-center justify-center rounded"
         >
           Contact Us

@@ -144,7 +144,9 @@ function Header() {
             </Link>
 
             <Link
-              href="/contact"
+                href="https://wa.me/2347061686434?text=I%20want%20to%20find%20out%20more%20about%20Cerrene"
+                target="_blank"
+                 rel="noopener noreferrer"
               className="text-white bg-cerreneOrange w-[138px] h-[54px] flex items-center justify-center rounded"
             >
               contact us

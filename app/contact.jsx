@@ -24,11 +24,15 @@ export default function Contact() {
             Ready to Elevate Your Space? Contact Cerrene Now!
           </div>
           <div className="flex flex-col gap-4">
-            <Link href="/" className="orangeSolidButton">
+            <Link  href="https://wa.me/2347061686434?text=I%20want%20to%20find%20out%20more%20about%20Cerrene"
+         target="_blank"
+          rel="noopener noreferrer" className="orangeSolidButton">
               Contact Us
             </Link>
             <Link
-              href="/"
+               href="https://wa.me/2347061686434?text=I%20would%20like%20to%20%20apply%20for%20a%20job%20at%20Cerrene"
+               target="_blank"
+                rel="noopener noreferrer"
               className="h-[60px] font-satoshi font-bold text-cerreneOrange  w-[277px] border border-cerreneOrange flex items-center justify-center rounded"
             >
               Get Hired

@@ -8,11 +8,17 @@ export default function Mission() {
   return (
     <section className="lg:py-[58px] py-10 text-[#4e4e4e]">
       <div className="container">
-        <h3 className="uppercase font-satoshi font-medium tracking-[4%] text-cerreneLightGreen italic ">
+        <h3 className="uppercase font-satoshi font-medium tracking-[4%] text-cerreneLightGreen italic "
+         data-aos="fade-down"
+         data-aos-once="true"
+         >
           CERRENE&apos;S MISSION / CORE VALUES
         </h3>
-        <p className="lg:text-[36px] slg:text-[30px] md:text-[24px] xl:text-[40px] font-satoshi font-medium leading-[130%] py-6 slg:py-8 lg:w-[685px] slg:w-[600px] md:w-[500px]">
-          {" "}
+        <p
+        data-aos="fade-left"
+         data-aos-once="true"
+         className="lg:text-[36px] slg:text-[30px] md:text-[24px] xl:text-[40px] font-satoshi font-medium leading-[130%] py-6 slg:py-8 lg:w-[685px] slg:w-[600px] md:w-[500px]">
+          
           Empowering spaces with exceptional cleanliness and reliability,
         </p>
       </div>
@@ -27,10 +33,15 @@ export default function Mission() {
         </div>
 
         <div className="bg-cerreneOrange md:col-span-2 md:row-span-1 flex flex-col lg:pt-20 lg:pl-6 slg:pt-10 md:pb-0 md:pt-4 slg:pl-3 md:pl-2 pt-9 pb-9 pl-6 ">
-          <h2 className="italic slg:text-[32px] text-[24px] lg:text-[40px] font-semibold py-3">
+          <h2 data-aos="flip-down"
+         data-aos-once="true" className="italic slg:text-[32px] text-[24px] lg:text-[40px] font-semibold py-3">
             Excellence
           </h2>
-          <p className="lg:text-[32px] slg:text-[24px] text-[20px] w-[150px] slg:w-[172px] pt-5  leading-[110%]">
+          <p
+          data-aos="fade-up"
+         data-aos-once="true" 
+         data-aos-delay="400" 
+         className="lg:text-[32px] slg:text-[24px] text-[20px] w-[150px] slg:w-[172px] pt-5  leading-[110%]">
             Pursuing <span className="italic">perfection</span> in every
             service.
           </p>
@@ -46,17 +57,26 @@ export default function Mission() {
         </div>
 
         <div className="bg-cerreneLightGreen  md:col-span-3 md:row-span-1 flex flex-col lg:pt-20 lg:pl-[60px] slg:pt-10 slg:pl-10 md:pl-6 md:pt-4   pt-9 pb-9 pl-6 md:pb-0">
-          <h2 className="italic lg:text-[40px] slg:text-[32px] text-[24px] font-semibold py-3">
+          <h2 data-aos="flip-down"
+         data-aos-once="true" className="italic lg:text-[40px] slg:text-[32px] text-[24px] font-semibold py-3">
             Integrity
           </h2>
-          <p className="lg:text-[32px] slg:text-[24px] text-[20px] w-[150px] slg:w-[172px] pt-5  leading-[110%]">
+          <p
+          data-aos="fade-up"
+         data-aos-once="true" 
+         data-aos-delay="400" 
+         className="lg:text-[32px] slg:text-[24px] text-[20px] w-[150px] slg:w-[172px] pt-5  leading-[110%]">
             <span className="italic">Honesty</span> and{" "}
             <span className="italic">ethics</span> guide us.
           </p>
         </div>
 
         <div className="bg-[#F8FABF] text-cerreneGreen md:col-span-4 md:row-span-1 hidden md:flex flex-col items-center justify-center">
-          <p className="lg:text-[56px] slg:text-[44px] md:text-[32px] lg:w-[387px]  text-center  leading-[110%]">
+          <p
+          data-aos="fade-up"
+         data-aos-once="true" 
+         data-aos-delay="400" 
+         className="lg:text-[56px] slg:text-[44px] md:text-[32px] lg:w-[387px]  text-center  leading-[110%]">
             New <span className="italic">solution</span> to easy living{" "}
           </p>
         </div>
@@ -71,10 +91,15 @@ export default function Mission() {
         </div>
 
         <div className="bg-cerreneGreen md:col-span-3 md:row-span-1 col-span-2 row-start-3 flex flex-col lg:pt-20 lg:pl-[60px] slg:pt-10 pt-9 pb-9 pl-6 slg:pl-10 md:pl-6 md:pt-4 ">
-          <h2 className="italic lg:text-[40px]  slg:text-[32px] text-[24px] font-semibold py-3">
+          <h2 data-aos="flip-down"
+         data-aos-once="true" className="italic lg:text-[40px]  slg:text-[32px] text-[24px] font-semibold py-3">
             Reliability
           </h2>
-          <p className="lg:text-[32px] slg:text-[24px] text-[20px] w-60   md:w-[160px] slg:w-[172px] pt-5  leading-[110%]">
+          <p
+          data-aos="fade-up"
+         data-aos-once="true" 
+         data-aos-delay="400" 
+         className="lg:text-[32px] slg:text-[24px] text-[20px] w-60   md:w-[160px] slg:w-[172px] pt-5  leading-[110%]">
             <span className="italic">Consistent,</span>{" "}
             <span className="italic">dependable</span> service delivery.{" "}
           </p>
@@ -90,17 +115,26 @@ export default function Mission() {
         </div>
 
         <div className="bg-cerreneDarkOrange col-span-2 md:row-span-1 flex flex-col lg:pt-16 lg:pl-6 slg:pt-10 slg:pl-3 md:pt-4  md:pl-2 pt-9 pb-9 pl-6">
-          <h2 className="italic lg:text-[40px] slg:text-[32px] text-[24px] font-semibold py-2">
+          <h2 data-aos="flip-down"
+         data-aos-once="true" className="italic lg:text-[40px] slg:text-[32px] text-[24px] font-semibold py-2">
             Innovation
           </h2>
-          <p className="lg:text-[32px] slg:text-[24px] text-[20px] w-60 md:w-[150px] slg:w-[172px] pt-4  leading-[110%]">
+          <p
+          data-aos="fade-up"
+         data-aos-once="true" 
+         data-aos-delay="400" 
+         className="lg:text-[32px] slg:text-[24px] text-[20px] w-60 md:w-[150px] slg:w-[172px] pt-4  leading-[110%]">
             Constantly <span className="italic">improving,</span>{" "}
             <span className="italic">adapting,</span> and{" "}
             <span className="italic">evolving.</span>
           </p>
         </div>
         <div className="bg-[#F8FABF] text-cerreneGreen col-span-2 md:row-span-1 md:hidden flex flex-col items-center justify-center h-40">
-          <p className="lg:text-[56px] slg:text-[44px] text-[32px] lg:w-[387px]  text-center  leading-[110%]">
+          <p
+          data-aos="fade-up"
+         data-aos-once="true" 
+         data-aos-delay="400" 
+         className="lg:text-[56px] slg:text-[44px] text-[32px] lg:w-[387px]  text-center  leading-[110%]">
             New <span className="italic">solution</span> to easy living{" "}
           </p>
         </div>

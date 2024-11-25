@@ -11,7 +11,7 @@ export const metadata = {
 
 export default function About() {
   return (
-    <main className="">
+    <main className="overflow-hidden" >
       <AboutHero />
       <Mission />
       <Success />

@@ -125,7 +125,7 @@ const Testimonials = ({ name, occupation, src, testimony }) => {
         </div>
         <Link
           className="border-cerreneOrange text-cerreneOrange flex items-center justify-center border h-[48px] w-[160px]  slg:h-[60px] slg:w-[197px]"
-          href="/"
+          href="/testimonials"
         >
           See more
         </Link>
