@@ -87,7 +87,7 @@ export default function Faqs() {
         <p className="mt-4 text-cerreneGreen text-xl leading-7 text-center font-satoshi max-w-[670px]"> 
           Our goal is to ensure you have all the information you need for a
           seamless experience with Cerrene. If you have additional questions,
-          feel free to contact us directly. We're here to help!
+          feel free to contact us directly. We&apos;re here to help!
         </p>
       </div>
       <div className="container text-[#4e4e4e]">
