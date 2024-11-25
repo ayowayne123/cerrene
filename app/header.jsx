@@ -4,12 +4,15 @@ import Link from "next/link";
 import Image from "next/image";
 import logoDark from "@/public/images/logoDark.png";
 import logoLight from "@/public/images/logoLight.png";
-import doodle from "@/public/icons/doodle.svg"; // Import the doodle image
+import doodle from "@/public/icons/doodle.svg"; 
 import { usePathname } from "next/navigation";
 import { FaTimes } from "react-icons/fa";
 import { FaAngleDown } from "react-icons/fa6";
 import { LiaTimesSolid } from "react-icons/lia";
 import { AiOutlineMenu, AiOutlineDown } from "react-icons/ai"; // Import the down arrow icon
+import cleaningHeader from "@/public/icons/cleaningHeader.png"
+import electricalHeader from "@/public/icons/electricalHeader.png"
+import plumbingHeader from "@/public/icons/plumbingHeader.png"
 
 function Header() {
   const pathname = usePathname();
@@ -99,31 +102,54 @@ function Header() {
                   <Image
                     src={doodle}
                     alt="doodle"
-                    className="absolute inset-0 w-full h-full object-contain scale-[200%] -z-10"
+                    className="absolute inset-0  w-full h-full object-contain scale-[200%] -z-10"
                   />
                 )}
               </div>
               {isServicesOpen && (
-                <div className="absolute top-full -left-8 z-20 bg-white shadow-lg rounded-lg w-32 ">
-                  <Link
-                    href="/services/plumbing"
-                    className="block px-2 py-1 text-sm text-[#4e4e4e] hover:bg-gray-200"
-                  >
-                    Plumbing Services
-                  </Link>
-                  <Link
-                    href="/services/electrical"
-                    className="block px-2 py-1 text-sm text-[#4e4e4e] hover:bg-gray-200"
-                  >
-                    Electrical Services
-                  </Link>
-                  <Link
-                    href="/services/cleaning"
-                    className="block px-2 py-1 text-sm text-[#4e4e4e] hover:bg-gray-200"
-                  >
-                    Cleaning Services
-                  </Link>
-                </div>
+                <div className="bg-[#f9f9c5] absolute  rounded-lg shadow-lg p-3 w-[350px] mx-auto absolute top-full -left-20 z-20  ">
+                <Link href='/services/cleaning' className="flex items-center gap-2 border-b border-dashed border-gray-300 pb-1.5 pt-1.5" >
+                  <div className="w-16 h-10  relative "> <Image
+                     src={cleaningHeader}
+                    alt="Cleaning Services"
+                    className="object-cover rounded-lg"
+                    fill
+                  /></div>
+                 
+                  <div>
+                    <h2 className=" font-semibold text-cerreneGreen">Cleaning Services</h2>
+                    <p className="text-xs text-[#4e4e4e]">Exemplary cleaning services for you.</p>
+                  </div>
+                </Link>
+                <Link href='/services/electrical' className="flex items-center gap-2 border-b border-dashed border-gray-300 pb-1.5 pt-1.5" >
+                  <div className="w-16 h-10  relative "> <Image
+                     src={electricalHeader}
+                    alt="Cleaning Services"
+                    className="object-cover rounded-lg"
+                    fill
+                  /></div>
+                 
+                  <div>
+                    <h2 className=" font-semibold text-cerreneGreen">Electrical Services</h2>
+                    <p className="text-xs text-[#4e4e4e]">Expert electrical solutions tailored perfectly..</p>
+                  </div>
+                </Link>
+                <Link href='/services/plumbing' className="flex items-center gap-2 border-b border-dashed border-gray-300 pb-1.5 pt-1.5" >
+                  <div className="w-16 h-10  relative "> <Image
+                     src={plumbingHeader}
+                    alt="Cleaning Services"
+                    className="object-cover rounded-lg"
+                    fill
+                  /></div>
+                 
+                  <div>
+                    <h2 className=" font-semibold text-cerreneGreen">Plumbing Services</h2>
+                    <p className="text-xs text-[#4e4e4e]">Efficient plumbing, guaranteed satisfaction.</p>
+                  </div>
+                </Link>
+          
+               
+              </div>
               )}
             </div>
 
