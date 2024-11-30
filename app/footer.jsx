@@ -22,6 +22,8 @@ function Footer() {
     <Link href='/services'>services</Link>
     <Link href='/blog'>blog</Link>
     <Link href='/faqs'>faqs</Link>
+    <Link href='https://www.instagram.com/cerreneservices/'  target="_blank"
+          rel="noopener noreferrer">Instagram</Link>
     </div>
     {/* <div className=' lg:p-20'>
     <button className='animated-button text-cerreneOrange border-cerreneOrange px-6 py-2 capitalize border-2'> subscribe</button>

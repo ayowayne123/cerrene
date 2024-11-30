@@ -54,3 +54,7 @@
 .top-gutter {
   @apply slg:h-[94px] h-[60px] md:h-[80px]  w-full inset-0 z-10;
 }
+
+.rounded-faq{
+border-radius: 10% 10% 45% 45% / 0% 0% 30% 30% ;
+}

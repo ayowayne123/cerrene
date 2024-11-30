@@ -80,7 +80,7 @@ export default function Faqs() {
   return (
     <section className="bg-white pb-24">
        <div className="bg-cerreneYellow top-gutter"></div>
-      <div className="lg:h-[730px] bg-cerreneYellow rounded-b-[450px] overflow-hidden flex items-center  flex-col justify-center lg:gap-[72px]">
+      <div className="lg:h-[740px] bg-cerreneYellow rounded-faq overflow-hidden flex items-center  flex-col justify-center lg:gap-[72px]">
         <h1 className="font-medium text-cerreneGreen slg:text-[72px] text-[36px]">
           Find <span className="italic font-semibold">Answers,</span> Get Help.
         </h1>
